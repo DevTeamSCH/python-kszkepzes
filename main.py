@@ -10,10 +10,11 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.socket = QTcpSocket()
+        self.socket = QTcpSocket(self)
         self.socket.connectToHost("localhost", 33000)
         self.socket.readyRead.connect(self.readText)
         self.ui.lineEdit.returnPressed.connect(self.sendText)
+        self.ui.sendButton.clicked.connect(self.sendText)
 
     def readText(self):
         data = self.socket.readAll()
@@ -21,6 +22,10 @@ class MainWindow(QMainWindow):
 
     def sendText(self):
         self.socket.write(self.ui.lineEdit.text().encode('utf-8'))
+        self.ui.lineEdit.clear()
+
+    def closeEvent(self, event):
+        self.socket.write("{quit}".encode('utf-8'))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
