@@ -93,6 +93,8 @@ print(Style.RESET_ALL)
 print('back to normal now')
 ```
 
+---
+
 ### Szintaxis
 
 ```python
@@ -140,7 +142,6 @@ print (file_text)
 Note:
 
 - Nincs sorvég jel
-
 - A kód blokkok indentálva vannak nincs kapcsoszárójel
 - komment #
 
@@ -151,7 +152,6 @@ Note:
 - integer
 - float
 - string
-
 - list
 - tuple
 - dictionary
@@ -161,23 +161,23 @@ Note:
 ### List
 
 ```python
-arr = ['physics', 'chemistry', 'physics', 1997, 2000]
+myList = ['physics', 'chemistry', 'physics', 1997, 2000]
 ```
 
 bármilyen típus lehet benne
 
-módosítható
+módosítható(mutable)
 
 +++
 
 ```python
-print ("list1[0]: ", list1[0])
-print ("list1[1:5]: ", list1[1:5])
+print ("myList[0]: ", myList[0])
+print ("myList[1:5]: ", myList[1:5])
 ```
 
 ```python
-arr.append(5)
-del arr[2]
+myList.append(5)
+del myList[2]
 ```
 
 +++
@@ -235,6 +235,8 @@ list
 
 range
 
++++
+
 ### Ciklusok
 
 #### While
@@ -252,6 +254,8 @@ range(0, 5)
 >>> list(range(5))
 [0, 1, 2, 3, 4]
 ```
+
++++
 
 #### For
 
