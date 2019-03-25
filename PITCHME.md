@@ -10,7 +10,7 @@ Guido van Rossum
 
 Magas szintű programozási nyelv
 
-+++
+---
 
 ### Interpretált
 
@@ -32,7 +32,7 @@ Gyors fejlesztés
 
 Szövegfeldolgozás
 
-+++
+---
 
 ### Hátrányok
 
@@ -63,7 +63,7 @@ Note:
 - könnyen használható
   - C++ ban jóval nehezebb
 
-+++
+---
 
 ### Virtualenv
 
@@ -79,7 +79,7 @@ pipenv
 print("Hello World!")
 ```
 
-+++
+---
 
 ```python
 from colorama import init
@@ -156,7 +156,7 @@ Note:
 - tuple
 - dictionary
 
-+++
+---
 
 ### List
 
@@ -168,7 +168,7 @@ bármilyen típus lehet benne
 
 módosítható(mutable)
 
-+++
+---
 
 ```python
 print ("myList[0]: ", myList[0])
@@ -180,7 +180,7 @@ myList.append(5)
 del myList[2]
 ```
 
-+++
+---
 
 ### Tuple
 
@@ -199,7 +199,7 @@ tup3 = tup1 + tup2
 print (tup3)
 ```
 
-+++
+---
 
 ### Dictionary
 
@@ -235,10 +235,10 @@ list
 
 range
 
-+++
+---
 
 ### Ciklusok
-
+---
 #### While
 
 ```python
@@ -255,7 +255,7 @@ range(0, 5)
 [0, 1, 2, 3, 4]
 ```
 
-+++
+---
 
 #### For
 
@@ -273,6 +273,8 @@ fruits = ['banana', 'apple',  'mango']
 for fruit in fruits:        # traversal of List sequence
    print ('Current fruit :', fruit)
 ```
+
+---
 
 ### Elágazás
 
@@ -308,6 +310,6 @@ class Employee:
       print ("Name : ", self.name,  ", Salary: ", self.salary)
 ```
 
-+++
+---
 
 ### Getter, Setter
