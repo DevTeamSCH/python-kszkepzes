@@ -4,43 +4,43 @@
 
 ### Története
 
-Guido van Rossum
+ - Guido van Rossum
 
-1991-ben jött létre
+ - 1991-ben jött létre
 
-Magas szintű programozási nyelv
+ - Magas szintű programozási nyelv
 
 ---
 
 ### Interpretált
 
-A kódot egy interpreter dolgozza fel
+ - A kódot egy interpreter dolgozza fel
 
 ---
 
 ### Miért jó a python?
 
-Könnyen tanulható
+ - Könnyen tanulható
 
-Bárhol lefut
+ - Bárhol lefut
 
-Nem kell lefordítani
+ - Nem kell lefordítani
 
-Végtelen package
+ - Végtelen package
 
-Gyors fejlesztés
+ - Gyors fejlesztés
 
-Szövegfeldolgozás
+ - Szövegfeldolgozás
 
 ---
 
 ### Hátrányok
 
-Csak runtime error
+ - Csak runtime error
 
-Dinamikus változok
+ - Dinamikus változok
 
-Lassabb, mint egy lefordított program
+ - Lassabb, mint egy lefordított program
 
 ---
 
@@ -50,13 +50,13 @@ Lassabb, mint egy lefordított program
 pip install colorama
 ```
 
-csomagkezelő
+ - csomagkezelő
 
-egy helyen van minden
+  - egy helyen van minden
 
-könnyen használható
+  - könnyen használható
 
-globálisan felrakhatók a csomagok
+  - globálisan felrakhatók a csomagok
 
 Note:
 
@@ -67,9 +67,9 @@ Note:
 
 ### Virtualenv
 
-Virtualenv saját környezet minden projekthez(dependecy)
+ - saját környezet minden projekthez(dependecy)
 
-pipenv
+ - pipenv
 
 ---
 
