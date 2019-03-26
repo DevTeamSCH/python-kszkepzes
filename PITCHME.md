@@ -38,7 +38,8 @@ Note:
 
 ---
 
-KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
+![Python is awsome!](https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.)
+KÉP: 
 
 ---
 
@@ -130,26 +131,25 @@ pip install flake8/black
 ### Virtualenv
 
  - saját környezet minden projekthez
-    -
-    -
-
+    -a
+    -b
 
  - Windows:
 
-```cmd
+```
 python -m venv venv
 ```
 
-```cmd
+```
 venv\Scripts\activate.bat
 ```
 
 - Linux:
-```bash
+```
 python3 -m venv venv
 ```
 
-```bash
+```
 source venv\bin\activate.bat
 ```
 
