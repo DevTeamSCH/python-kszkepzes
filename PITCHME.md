@@ -1,4 +1,4 @@
-# Python 3
+# Python 3 alapok
 
 ---
 
@@ -10,28 +10,41 @@
 
  - Magas szintű programozási nyelv
 
+Note:
+   - BDFL (Benevolent dictator for life)
+   - Monty Python, karácsony
+   - könnyen olvasható, tanulható, gyors fejlesztés
+   - lassú
+
 ---
 
 ### Interpretált
 
- - A kódot egy interpreter dolgozza fel
+ - A kódot egy értelmező dolgozza fel
+ - Nem kell fordítani
+ - Platformfüggetlen
+
+Note:
 
 ---
 
-### Miért jó a python?
-
- - Könnyen tanulható
-
- - Bárhol lefut
-
- - Nem kell lefordítani
+### Miért szeretjük a python?
 
  - Végtelen package
+   - 
+Note:
+   - Magasszintű:
+      -  Könnyen tanulható, gyors fejlesztés
 
- - Gyors fejlesztés
+---
 
- - Szövegfeldolgozás
+### Miért szeretjük a python?
 
+ - 
+
+Note:
+   - Interpretált:
+      - Bárhol lefut, nem kell lefordítani
 ---
 
 ### Hátrányok
