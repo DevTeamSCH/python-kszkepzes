@@ -47,18 +47,38 @@ KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
    - Django
    - Flusk
    - Requests
+
++++
+
  - IT Security:
    - Scapy
    - Nmap
+
++++
+
  - AI:
   - TensorFlow
   - Keras
+
++++
+
  - Data Science:
    - Pandas
+   - StatsModels
+   - NumPy
+
++++
+
  - GUI:
    - PyQt
+   - Tkinter
+   - Flexx
  
-
++++
+ - Data visualization
+   - matplotlib
+   - Plotly
+   - geoplotlib
 Note:
    
 ---
