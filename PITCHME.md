@@ -43,42 +43,42 @@ KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
 ---
 ### Csomagok
 
- - Webfejlesztés:
-   - Django
-   - Flusk
-   - Requests
+- Webfejlesztés:
+    - Django
+    - Flusk
+    - Requests
 
 +++
 
- - IT Security:
-   - Scapy
-   - Nmap
+- IT Security:
+    - Scapy
+    - Nmap
 
 +++
 
- - AI:
-  - TensorFlow
-  - Keras
+- AI:
+    - TensorFlow
+    - Keras
 
 +++
 
- - Data Science:
-   - Pandas
-   - StatsModels
-   - NumPy
+- Data Science:
+    - Pandas
+    - StatsModels
+    - NumPy
 
 +++
 
- - GUI:
-   - PyQt
-   - Tkinter
-   - Flexx
+- GUI:
+    - PyQt
+    - Tkinter
+    - Flexx
  
 +++
- - Data visualization
-   - matplotlib
-   - Plotly
-   - geoplotlib
+- Data visualization
+    - matplotlib
+    - Plotly
+    - geoplotlib
 Note:
    
 ---
