@@ -132,7 +132,7 @@ pip install flake8/black
  - saját környezet minden projekthez
     - a
     - b
-
++++
  - Windows:
 
 ```
@@ -142,7 +142,7 @@ python -m venv venv
 ```
 venv\Scripts\activate.bat
 ```
-
++++
  - Linux:
 
 ```
