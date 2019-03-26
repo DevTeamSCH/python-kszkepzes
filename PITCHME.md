@@ -143,7 +143,8 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-- Linux:
+ - Linux:
+
 ```
 python3 -m venv venv
 ```
