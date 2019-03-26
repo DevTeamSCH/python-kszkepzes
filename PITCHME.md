@@ -41,6 +41,29 @@ Note:
 KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
 
 ---
+
+### Tökéletes?!
+
++++
+### Tökéletes?!
+
+NEM!
+
++++
+
+### Tökéletes?!
+- Lassú, nagyon lassú
+- Zabálja a ramot
+- Csak futási hiba
+
+Note:
+
++++
+Kép: https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/gpp-python3.html
+
+Note:
+ https://en.wikipedia.org/wiki/N-body_simulation
+---
 ### Csomagok
 
 - Webfejlesztés:
@@ -81,21 +104,10 @@ KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
     - geoplotlib
 Note:
    
----
-
-### Hátrányok
-
- - Lassabb, mint egy lefordított program
-
-Note:
 
 ---
 
 ### Pip
-
-```
-pip install colorama
-```
 
  - csomagkezelő
 
@@ -103,12 +115,16 @@ pip install colorama
 
   - könnyen használható
 
-  - globálisan felrakhatók a csomagok
-
 Note:
 
 - könnyen használható
   - C++ ban jóval nehezebb
+
++++
+
+```
+pip install colorama
+```
 
 ---
 
@@ -118,15 +134,32 @@ Note:
 
  - pipenv
 
+```cmd
+python -m venv venv
+```
+
+```cmd
+venv\Scripts\activate.bat
+```
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv\bin\activate.bat
+```
+
 ---
 
 ### Hello World!
+
++++ 
 
 ```python
 print("Hello World!")
 ```
 
----
++++
 
 ```python
 from colorama import init
@@ -146,7 +179,6 @@ print('back to normal now')
 
 ```python
 #!/usr/bin/python3
-
 import sys
 
 try:
@@ -161,29 +193,7 @@ print "' When finished"
 
 while file_text != file_finish:
    file_text = raw_input("Enter text: ")
-   
-   if file_text == file_finish:
-      # close the file
-	  file.close
-      break
-   file.write(file_text)
-   file.write("\n")
-file.close()
-file_name = input("Enter filename: ")
-
-if len(file_name) == 0:
-   print ("Next time please enter something")
-   sys.exit()
-
-try:
-   file = open(file_name, "r")
-
-except IOError:
-   print ("There was an error reading file")
-   sys.exit()
-file_text = file.read()
-file.close()
-print (file_text)
+  
 ```
 
 Note:
