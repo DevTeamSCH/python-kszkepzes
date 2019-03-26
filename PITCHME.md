@@ -30,30 +30,44 @@ Note:
 
 ### Miért szeretjük a python?
 
- - Végtelen package
-   - 
 Note:
    - Magasszintű:
       -  Könnyen tanulható, gyors fejlesztés
+   - Interpretált:
+      - Bárhol lefut, nem kell lefordítani
 
 ---
 
-### Miért szeretjük a python?
+KÉP: https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.
 
- - 
+---
+### Csomagok
+
+ - Webfejlesztés:
+   - Django
+   - Flusk
+   - Requests
+ - IT Security:
+   - Scapy
+   - Nmap
+ - AI:
+  - TensorFlow
+  - Keras
+ - Data Science:
+   - Pandas
+ - GUI:
+   - PyQt
+ 
 
 Note:
-   - Interpretált:
-      - Bárhol lefut, nem kell lefordítani
+   
 ---
 
 ### Hátrányok
 
- - Csak runtime error
-
- - Dinamikus változok
-
  - Lassabb, mint egy lefordított program
+
+Note:
 
 ---
 
