@@ -121,18 +121,20 @@ Note:
   - C++ ban jóval nehezebb
 
 +++
-
 ```
-pip install colorama
+pip install flake8/black
 ```
 
 ---
 
 ### Virtualenv
 
- - saját környezet minden projekthez(dependecy)
+ - saját környezet minden projekthez
+    -
+    -
 
- - pipenv
+
+ - Windows:
 
 ```cmd
 python -m venv venv
@@ -141,6 +143,8 @@ python -m venv venv
 ```cmd
 venv\Scripts\activate.bat
 ```
+
+- Linux:
 ```bash
 python3 -m venv venv
 ```
@@ -160,6 +164,10 @@ print("Hello World!")
 ```
 
 +++
+
+```
+pip install colorama
+```
 
 ```python
 from colorama import init
@@ -206,16 +214,20 @@ Note:
 
 ### Változók
 
++++
+
 - integer
 - float
+- complex number
 - string
-- list
-- tuple
-- dictionary
+- bool
 
 ---
 
 ### List
+
+
++++
 
 ```python
 myList = ['physics', 'chemistry', 'physics', 1997, 2000]
@@ -241,6 +253,8 @@ del myList[2]
 
 ### Tuple
 
++++
+
 Ugyanaz, mint egy lista
 
 Nem módosítható(immutable)
@@ -260,6 +274,8 @@ print (tup3)
 
 ### Dictionary
 
++++
+
 Kulcs érték pár
 
 A kulcs egyedi, érték bármi lehet
@@ -274,6 +290,9 @@ dict['Age'] = 8
 del dict['Name']
 ```
 
+---
+
+### Függvények
 ---
 
 ### Alap beépített fgv-ek
@@ -293,11 +312,10 @@ list
 range
 
 ---
-
 ### Ciklusok
 ---
 #### While
-
++++
 ```python
 count = 0
 while (count < 9):
@@ -316,6 +334,7 @@ range(0, 5)
 
 #### For
 
++++
 ```python
 for var in range(5):
    print (var)
@@ -333,8 +352,9 @@ for fruit in fruits:        # traversal of List sequence
 
 ---
 
-### Elágazás
+### Elágazások
 
++++
 ```python
 if expression1:
    statement(s)
@@ -350,6 +370,7 @@ else:
 
 ### Osztályok
 
++++
 ```python
 class Employee:
    'Common base class for all employees'
@@ -370,3 +391,6 @@ class Employee:
 ---
 
 ### Getter, Setter
+
++++
+a
