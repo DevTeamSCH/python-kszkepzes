@@ -42,25 +42,24 @@ import this
 
 ### Története
 
- - Guido van Rossum
-
- - 1991-ben jött létre
-
- - Magas szintű programozási nyelv
+- Guido van Rossum
+- 1991-ben jött létre
+- Magas szintű programozási nyelv
 
 Note:
-   - BDFL (Benevolent dictator for life)
-   - Monty Python, karácsony
-   - könnyen olvasható, tanulható, gyors fejlesztés
-   - lassú
+
+- BDFL (Benevolent dictator for life)
+- Monty Python, karácsony
+- könnyen olvasható, tanulható, gyors fejlesztés
+- lassú
 
 ---
 
 ### Interpretált
 
- - A kódot egy értelmező dolgozza fel
- - Nem kell fordítani
- - Platformfüggetlen
+- A kódot egy értelmező dolgozza fel
+- Nem kell fordítani
+- Platformfüggetlen
 
 Note:
 
@@ -69,10 +68,11 @@ Note:
 ### Miért szeretjük a python?
 
 Note:
-   - Magasszintű:
-      -  Könnyen tanulható, gyors fejlesztés
-   - Interpretált:
-      - Bárhol lefut, nem kell lefordítani
+
+- Magasszintű:
+  - Könnyen tanulható, gyors fejlesztés
+  - Interpretált:
+    - Bárhol lefut, nem kell lefordítani
 
 ---
 
@@ -279,18 +279,48 @@ Note:
 
 ### Változók
 
+- number (integer, floating point, complex)
+- boolean
+- string
+- list, tuple, dictionary, ...
+
 +++
 
-- integer
-- float
-- complex number
-- string
-- bool
+```python
+a = 2
+b = 3.2
+d = 2+4j
+x = False
+str = "string"
+str2 = str * 2
+str3 = str2 + "abc"
+```
+
++++
+
+```python
+print(a)
+print(b)
+print(d)
+print(x)
+print(str)
+print(str1)
+print(str2)
+```
+
+```python
+2
+3.2
+2+4j
+False
+string
+stringstring
+stringabc
+```
 
 ---
 
 ### List
-
 
 +++
 
@@ -302,7 +332,7 @@ bármilyen típus lehet benne
 
 módosítható(mutable)
 
----
++++
 
 ```python
 print ("myList[0]: ", myList[0])
@@ -358,6 +388,7 @@ del dict['Name']
 ---
 
 ### Függvények
+
 ---
 
 ### Alap beépített fgv-ek
@@ -377,10 +408,15 @@ list
 range
 
 ---
+
 ### Ciklusok
+
 ---
+
 #### While
+
 +++
+
 ```python
 count = 0
 while (count < 9):
@@ -400,6 +436,7 @@ range(0, 5)
 #### For
 
 +++
+
 ```python
 for var in range(5):
    print (var)
@@ -420,6 +457,7 @@ for fruit in fruits:        # traversal of List sequence
 ### Elágazások
 
 +++
+
 ```python
 if expression1:
    statement(s)
@@ -436,6 +474,7 @@ else:
 ### Osztályok
 
 +++
+
 ```python
 class Employee:
    'Common base class for all employees'
@@ -445,7 +484,7 @@ class Employee:
       self.name = name
       self.salary = salary
       Employee.empCount += 1
-   
+
    def displayCount(self):
      print ("Total Employee %d" % Employee.empCount)
 
