@@ -1,4 +1,4 @@
-# Python3  
+# Python3 alapok  
 
 ```python
 import this
@@ -172,7 +172,7 @@ pip install flake8
 
 Note:
 
-- Dependensy, egy csomag több verzió
+- Dependency, egy csomag több verzió
 
 +++
 
@@ -246,7 +246,7 @@ print('back to normal now')
 
 ---
 
-### Szintaxis
+### Szintaxis TODO
 
 ```python
 #!/usr/bin/python3
@@ -322,7 +322,9 @@ stringabc
 
 +++
 
-- bármilyen típus lehet benne
+- bármilyen típus tartalmazhat (általában egyforma)
+
+- Az elemek indexelhetőek
 
 - módosítható(mutable)
 
@@ -427,6 +429,48 @@ def fibonacci(n):
     else: return F(n-1)+F(n-2)
 ```
 
++++
+
+- Opciónális paraméter
+
+```python
+def fibonacci(n = 10):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return F(n-1)+F(n-2)
+```
+
++++
+
+- Tetszőlegesen sok paraméter
+
+```python
+def minimum(first, *args): # *args néven szokás
+    acc = first
+    for x in args:
+        if x < acc:
+            acc = x
+    return acc
+
+print(minimum(3, 4, 2, -8, 6))
+```
+
++++
+
+- névszerinti paraméterátadás
+
+```python
+def print_rectangle(w=0, h=0, x=0, y=0):
+    print("Rectangle")
+    print("- size: {}×{}".format(w, h))
+    print("- position: ({};{})".format(x, y))
+
+print_rectangle(20, 30, 40, 50)
+print_rectangle(x=10, w=19, h=25)
+```
+
++++
+
 ---
 
 ### Alap beépített fgv-ek
@@ -456,55 +500,70 @@ range
 +++
 
 ```python
-count = 0
-while (count < 9):
-   print ('The count is:', count)
-   count = count + 1
+i = 1
+while i < 6:
+    print(i)
+    i += 1
 ```
 
+Output:
+
 ```python
->>> range(5)
-range(0, 5)
->>> list(range(5))
-[0, 1, 2, 3, 4]
+1
+2
+3
+4
+5
 ```
 
 ---
 
-#### For
+### For(each)
 
 +++
 
 ```python
-for var in range(5):
-   print (var)
+a = [1, 2, 3]
+for x in a:
+    print(x)
+
+print("-")
+
+for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
+    print(x)
 ```
 
-```python
-for letter in 'Python':     # traversal of a string sequence
-   print ('Current Letter :', letter)
-print()
-fruits = ['banana', 'apple',  'mango']
+Output:
 
-for fruit in fruits:        # traversal of List sequence
-   print ('Current fruit :', fruit)
+```python
+1
+2
+3
+-
+1
+3
+5
 ```
 
 ---
 
 ### Elágazások
 
-+++
+```python
+b = False
+x = 3
+if not b and x <= 6:
+    print("Hello")
+elif b or x > 5:
+   print("World!")
+else:
+   print("Hello World!")
+```
+
+Output:
 
 ```python
-if expression1:
-   statement(s)
-elif expression2:
-   statement(s)
-elif expression3:
-   statement(s)
-else:
-   statement(s)
+Hello
 ```
 
 ---
