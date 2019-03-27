@@ -157,7 +157,7 @@ Note:
 Note:
 
 - könnyen használható
-  - C++ ban jóval nehezebb
+  - C++ ban jóval nehezebb lib import
 
 +++
 
@@ -247,32 +247,51 @@ print('back to normal now')
 
 ---
 
-### Szintaxis TODO
+### Szintaxis
 
 ```python
-#!/usr/bin/python3
-import sys
+'''This is the start of the program '''
+while 1:
+    print ('Spam')
+    answer = input('Press y for large fries ')
+    if answer == 'y':
+        print ('Large fries with spam, mmmm, yummy ')
+        continue
+    answer = input('Had enough yet? ')
+    if answer == 'y':
+        break
+print ('Have a ')
+print ('nice day!') #Bye bye
+```
 
-try:
-   # open file stream
-   file = open(file_name, "w")
++++
 
-except IOError:
-   print ("There was an error writing to", file_name)
-   sys.exit()
-print ("Enter '", file_finish,)
-print "' When finished"
+```python
 
-while file_text != file_finish:
-   file_text = raw_input("Enter text: ")
-  
+'''This is the start of the program '''
+x = 1
+while (x < 6):
+    print() # prints a new line
+    print ("x = " + str(x)) # the , forces printing of the next item
+                            # to be on the same line 
+    x = x + 1
+    y = 1
+    while (y < 6):
+        print ("y = " + str(y),) # the , forces printing on the same line
+        y = y + 1
+        z = 1
+        while (z < 6):
+            print ("z = " + str(z),) # the , forces printing on the same line
+            z = z + 1
+        print() # prints a new line
 ```
 
 Note:
 
 - Nincs sorvég jel
 - A kód blokkok indentálva vannak nincs kapcsoszárójel
-- komment #
+  - 4 space
+- komment #, '''alam'''
 
 ---
 
@@ -324,9 +343,7 @@ stringabc
 +++
 
 - Bármilyen típust tartalmazhat (általában egyforma)
-
 - Az elemek indexelhetőek
-
 - Módosítható(mutable)
 
 +++
@@ -360,7 +377,6 @@ c
 +++
 
 - Ugyanaz, mint egy lista
-
 - De nem módosítható(immutable)
 
 +++
@@ -427,8 +443,8 @@ False
 
 +++
 
-- mint a lista, csak minden érték egyszer szerepelhet
-- nem biztos, hogy sorban tárolja
+- Mint a lista, csak minden érték egyszer szerepelhet
+- Nem biztos, hogy sorban tárolja
 
 +++
 
@@ -508,25 +524,21 @@ print_rectangle(20, 30, 40, 50)
 print_rectangle(x=10, w=19, h=25)
 ```
 
-+++
-
 ---
 
 ### Alap beépített fgv-ek
 
-int
+- input() Allowing user input
 
-hex
+- len() Returns the length of an object
 
-oct
+- abs() Returns the absolute value of a number
 
-str
+- slice() Returns a slice object
 
-len
+- ...
 
-list
-
-range
+- https://www.w3schools.com/python/python_ref_functions.asp
 
 ---
 
@@ -631,6 +643,9 @@ Output:
 Before
 Hello
 After
+```
+
+---
 
 ### Osztályok
 
