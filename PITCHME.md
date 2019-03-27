@@ -496,7 +496,7 @@ print(minimum(3, 4, 2, -8, 6))
 
 +++
 
-- névszerinti paraméterátadás
+- Névszerinti paraméterátadás
 
 ```python
 def print_rectangle(w=0, h=0, x=0, y=0):
@@ -606,6 +606,31 @@ Hello
 ```
 
 ---
+
+### Dekorátor
+
++++
+
+```python
+def my_decorator(func):
+    def wrapper():
+       print("Before")
+       func()
+       print("After")
+
+    return wrapper
+
+@my_decorator
+def hello():
+    print("Hello")
+````
+
+Output:
+
+```python
+Before
+Hello
+After
 
 ### Osztályok
 
