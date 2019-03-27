@@ -1,4 +1,42 @@
-# Python 3 alapok
+# Python3  
+
+```python
+import this
+```
+
+---
+
+### The Zen of Python, by Tim Peters
+
+<div class="half left">
+  <ol>
+  @size[24px](<li><b>Beautiful is better than ugly.</b></li>)
+  @size[24px](<li><b>Explicit is better than implicit.</b></li>)
+  @size[24px](<li><b>Simple is better than complex.</b></li>)
+  @size[24px](<li><b>Complex is better than complicated.</b></li>)
+  @size[24px](<li>Flat is better than nested.</li>)
+  @size[24px](<li>Sparse is better than dense.</li>)
+  @size[24px](<li><b>Readability counts.</b></li>)
+  @size[24px](<li>Special cases aren't special enough to break the rules.</li>)
+  @size[24px](<li>Although practicality beats purity.</li>)
+  @size[24px](<li>Errors should never pass silently.</li>)
+  @size[24px](<li>Unless explicitly silenced.</li>)
+  @size[24px](<li>In the face of ambiguity, refuse the temptation to guess.</li>)
+  </ol>
+</div>
+
+<div class="half right">
+  <ol start="13">
+  @size[24px](<li>There should be one-- and preferably only one --obvious way to do it.</li>)
+  @size[24px](<li>Although that way may not be obvious at first unless you're Dutch.</li>)
+  @size[24px](<li>Now is better than never.</li>)
+  @size[24px](<li>Although never is often better than <i>right</i> now.</li>)
+  @size[24px](<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>)
+  @size[24px](<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>)
+  @size[24px](<li>Namespaces are one honking great idea -- let's do more of those!</li>)
+  </ol>
+</div>
+
 
 ---
 
@@ -54,7 +92,7 @@ NEM!
 ### Tökéletes?!
 - Lassú, nagyon lassú
 - Zabálja a ramot
-- Csak futási hiba
+
 
 Note:
 
@@ -105,6 +143,7 @@ Note:
 Note:
    
 
+
 ---
 
 ### Pip
@@ -121,43 +160,68 @@ Note:
   - C++ ban jóval nehezebb
 
 +++
+
+```bash
+pip install flake8
 ```
-pip install flake8/black
-```
+
+---
+
+### Flake8
+
+- linter
+- segít jobb kódot írni:
+  - syntax error
+  - typo
+  - rossz formázás
+- pep8
+
+Note:
+  pep8:
+    - Style Guide
+    - átlátható
+    - egységes
+    - kevesebb merge conflict
 
 ---
 
 ### Virtualenv
 
- - saját környezet minden projekthez
-    - a
-    - b
-+++
- - Windows:
+- saját környezet minden projekthez
 
-```
+Note:
+
+- Dependensy, egy csomag több verzió
+
++++
+
+- Windows:
+
+```cmd
 python -m venv venv
 ```
 
-```
+```cmd
 venv\Scripts\activate.bat
 ```
-+++
- - Linux:
 
-```
++++
+
+- Linux:
+
+```bash
 python3 -m venv venv
 ```
 
-```
+```bash
 source venv\bin\activate
 ```
 
 ---
 
-### Hello World!
+### Hello World
 
-+++ 
++++
 
 ```python
 print("Hello World!")
@@ -165,7 +229,7 @@ print("Hello World!")
 
 +++
 
-```
+```bash
 pip install colorama
 ```
 
