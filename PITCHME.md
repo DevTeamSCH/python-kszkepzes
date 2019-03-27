@@ -99,7 +99,7 @@ Note:
 
 +++
 
-![C++ vs Python3](https://github.com/DevTeamSCH/python-kszkepzes/blob/master/media/c%2B%2B_vs_python.png)
+![C++ vs Python3](https://raw.githubusercontent.com/DevTeamSCH/python-kszkepzes/master/media/c%2B%2B_vs_python.png)
 
 Note:
  https://en.wikipedia.org/wiki/N-body_simulation
