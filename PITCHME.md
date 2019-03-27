@@ -506,6 +506,12 @@ print_rectangle(x=10, w=19, h=25)
 
 ### Alap beépített fgv-ek
 
+```python
+dir(__builtins__)
+```
+
++++
+
 - input() Allowing user input
 
 - len() Returns the length of an object
@@ -524,7 +530,7 @@ print_rectangle(x=10, w=19, h=25)
 
 ---
 
-#### While
+### While
 
 +++
 
@@ -577,6 +583,8 @@ Output:
 ---
 
 ### Elágazások
+
++++
 
 ```python
 b = False
