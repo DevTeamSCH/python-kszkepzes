@@ -99,7 +99,7 @@ Note:
 
 +++
 
-Kép: https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/gpp-python3.html
+![C++ vs Python3](https://github.com/DevTeamSCH/python-kszkepzes/blob/master/media/c%2B%2B_vs_python.png)
 
 Note:
  https://en.wikipedia.org/wiki/N-body_simulation
