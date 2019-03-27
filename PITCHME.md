@@ -65,14 +65,14 @@ Note:
 
 ---
 
-### Miért szeretjük a python?
+### Miért szeretjük a pythont?
 
 Note:
 
 - Magasszintű:
   - Könnyen tanulható, gyors fejlesztés
-  - Interpretált:
-    - Bárhol lefut, nem kell lefordítani
+- Interpretált:
+  - Bárhol lefut, nem kell lefordítani
 
 ---
 
@@ -83,6 +83,7 @@ Note:
 ### Tökéletes?!
 
 +++
+
 ### Tökéletes?!
 
 NEM!
@@ -90,18 +91,20 @@ NEM!
 +++
 
 ### Tökéletes?!
-- Lassú, nagyon lassú
-- Zabálja a ramot
 
+- Viszonylag lassú
+- Nagy memóriaigény
 
 Note:
 
 +++
+
 Kép: https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/gpp-python3.html
 
 Note:
  https://en.wikipedia.org/wiki/N-body_simulation
 ---
+
 ### Csomagok
 
 - Webfejlesztés:
@@ -136,21 +139,20 @@ Note:
     - Flexx
  
 +++
+
 - Data visualization
     - matplotlib
     - Plotly
     - geoplotlib
 Note:
-   
-
 
 ---
 
 ### Pip
 
-- csomagkezelő
-  - egy helyen van minden
-  - könnyen használható
+- Csomagkezelő
+  - Egy helyen van minden
+  - Könnyen használható
 
 Note:
 
@@ -163,12 +165,11 @@ Note:
 pip install flake8
 ```
 
-
 ---
 
 ### Virtualenv
 
-- saját környezet minden projekthez
+- Saját környezet minden projekthez
 
 Note:
 
@@ -195,26 +196,26 @@ python3 -m venv venv
 ```
 
 ```bash
-source venv\bin\activate
+source venv/bin/activate
 ```
 
 ---
 
 ### Flake8
 
-- linter
-- segít jobb kódot írni:
-  - syntax error
-  - typo
-  - rossz formázás
-- pep8
+- Linter
+- Segít jobb kódot írni:
+  - Syntax error
+  - Typo
+  - Rossz formázás
+- pep8(Style Guide)
 
 Note:
-  pep8:
-    - Style Guide
-    - átlátható
-    - egységes
-    - kevesebb merge conflict
+
+- Style Guide
+  - átlátható
+  - egységes
+  - kevesebb merge conflict
 
 ---
 
@@ -322,26 +323,34 @@ stringabc
 
 +++
 
-- bármilyen típus tartalmazhat (általában egyforma)
+- Bármilyen típust tartalmazhat (általában egyforma)
 
 - Az elemek indexelhetőek
 
-- módosítható(mutable)
-
-```python
-myList = ['physics', 'chemistry', 'physics', 1997, 2000]
-```
+- Módosítható(mutable)
 
 +++
 
 ```python
-print ("myList[0]: ", myList[0])
-print ("myList[1:5]: ", myList[1:5])
+list = ['a', 'b', 'c', 1, 2, 3]
+for a in list:
+    print(a)
+list[4] = 22
+list.append(50)
+del(list[3])
+print(list[2:])
 ```
 
+Output:
+
 ```python
-myList.append(5)
-del myList[2]
+a
+b
+c
+1
+2
+3
+['c', 22, 3, 50]
 ```
 
 ---
@@ -354,15 +363,32 @@ del myList[2]
 
 - De nem módosítható(immutable)
 
-```python
-tup1 = (12, 34.56)
-tup2 = ('abc', 'xyz')
-```
++++
 
 ```python
-# tup1[0] = 100;
-tup3 = tup1 + tup2
-print (tup3)
+tuple = ('a', 'b', 3)
+item = tuple[2]
+for a in tuple:
+    print(a)
+
+a, b, c = tuple
+print(c)
+
+tuple2 = (34, 56, 'd')
+tuple3 = tuple + tuple2
+print(tuple3)
+```
+
+Output:
+
+```python
+a
+b
+3
+
+3
+
+('a', 'b', 3, 34, 56, 'd')
 ```
 
 ---
@@ -374,14 +400,25 @@ print (tup3)
 - Kulcs érték pár
 - A kulcs egyedi, érték bármi lehet
 
-```python
-dict = {'Name': 'Zara', 'Age': , 'Class': 'First'}
-```
++++
 
 ```python
-print ("dict['Name']: ", dict['Name'])
+dict = {'Name': 'Zara', 'Age': 10 , 'Class': 'First'}
+
 dict['Age'] = 8
+for key, value in dict.items():
+    print (key, " : ", value)
 del dict['Name']
+print('Name' in dict)
+```
+
+Output:
+
+```python
+Name  :  Zara
+Age  :  8
+Class  :  First
+False
 ```
 
 ---
@@ -392,6 +429,8 @@ del dict['Name']
 
 - mint a lista, csak minden érték egyszer szerepelhet
 - nem biztos, hogy sorban tárolja
+
++++
 
 ```python
 set = {1, 3, 5}
@@ -445,7 +484,7 @@ def fibonacci(n = 10):
 - Tetszőlegesen sok paraméter
 
 ```python
-def minimum(first, *args): # *args néven szokás
+def minimum(first, *args):
     acc = first
     for x in args:
         if x < acc:
