@@ -264,28 +264,6 @@ print ('Have a ')
 print ('nice day!') #Bye bye
 ```
 
-+++
-
-```python
-
-'''This is the start of the program '''
-x = 1
-while (x < 6):
-    print() # prints a new line
-    print ("x = " + str(x)) # the , forces printing of the next item
-                            # to be on the same line 
-    x = x + 1
-    y = 1
-    while (y < 6):
-        print ("y = " + str(y),) # the , forces printing on the same line
-        y = y + 1
-        z = 1
-        while (z < 6):
-            print ("z = " + str(z),) # the , forces printing on the same line
-            z = z + 1
-        print() # prints a new line
-```
-
 Note:
 
 - Nincs sorvég jel
