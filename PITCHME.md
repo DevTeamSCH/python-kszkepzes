@@ -165,23 +165,6 @@ Note:
 pip install flake8
 ```
 
----
-
-### Flake8
-
-- linter
-- segít jobb kódot írni:
-  - syntax error
-  - typo
-  - rossz formázás
-- pep8
-
-Note:
-  pep8:
-    - Style Guide
-    - átlátható
-    - egységes
-    - kevesebb merge conflict
 
 ---
 
@@ -216,6 +199,24 @@ python3 -m venv venv
 ```bash
 source venv\bin\activate
 ```
+
+---
+
+### Flake8
+
+- linter
+- segít jobb kódot írni:
+  - syntax error
+  - typo
+  - rossz formázás
+- pep8
+
+Note:
+  pep8:
+    - Style Guide
+    - átlátható
+    - egységes
+    - kevesebb merge conflict
 
 ---
 
