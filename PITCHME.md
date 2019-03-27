@@ -148,10 +148,8 @@ Note:
 
 ### Pip
 
- - csomagkezelő
-
+- csomagkezelő
   - egy helyen van minden
-
   - könnyen használható
 
 Note:
@@ -299,9 +297,9 @@ str3 = str2 + "abc"
 +++
 
 ```python
-print(a)
-print(b)
-print(d)
+print(a ** 3)
+print(b / 2)
+print(d * 2)
 print(x)
 print(str)
 print(str1)
@@ -309,9 +307,9 @@ print(str2)
 ```
 
 ```python
-2
-3.2
-2+4j
+8
+1.6
+4+8j
 False
 string
 stringstring
@@ -324,13 +322,13 @@ stringabc
 
 +++
 
+- bármilyen típus lehet benne
+
+- módosítható(mutable)
+
 ```python
 myList = ['physics', 'chemistry', 'physics', 1997, 2000]
 ```
-
-bármilyen típus lehet benne
-
-módosítható(mutable)
 
 +++
 
@@ -350,9 +348,9 @@ del myList[2]
 
 +++
 
-Ugyanaz, mint egy lista
+- Ugyanaz, mint egy lista
 
-Nem módosítható(immutable)
+- De nem módosítható(immutable)
 
 ```python
 tup1 = (12, 34.56)
@@ -371,12 +369,11 @@ print (tup3)
 
 +++
 
-Kulcs érték pár
-
-A kulcs egyedi, érték bármi lehet
+- Kulcs érték pár
+- A kulcs egyedi, érték bármi lehet
 
 ```python
-dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+dict = {'Name': 'Zara', 'Age': , 'Class': 'First'}
 ```
 
 ```python
@@ -387,7 +384,48 @@ del dict['Name']
 
 ---
 
+### Set
+
++++
+
+- mint a lista, csak minden érték egyszer szerepelhet
+- nem biztos, hogy sorban tárolja
+
+```python
+set = {1, 3, 5}
+print(1 in set)
+print(2 in set)
+set.add(2)
+set.update([6,4])
+for a in set:
+    print(a)
+```
+
+Output:
+
+```python
+True
+False
+1
+2
+3
+4
+5
+6
+```
+
+---
+
 ### Függvények
+
++++
+
+```python
+def fibonacci(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return F(n-1)+F(n-2)
+```
 
 ---
 
@@ -491,10 +529,3 @@ class Employee:
    def displayEmployee(self):
       print ("Name : ", self.name,  ", Salary: ", self.salary)
 ```
-
----
-
-### Getter, Setter
-
-+++
-a
