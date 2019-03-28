@@ -5,6 +5,11 @@ import this
 
 ```
 
+Note:
+
+- Ki ismeri a Pythont?
+- Ki tudja mit csinál a kód?
+
 ---
 
 ### The Zen of Python, by Tim Peters
@@ -12,7 +17,7 @@ import this
 <div class="half left">
   <ol>
   @size[24px](<li><b>Beautiful is better than ugly.</b></li>)
-  @size[24px](<li><b>Explicit is better than implicit.</b></li>)
+  @size[24px](<li>Explicit is better than implicit.</li>)
   @size[24px](<li><b>Simple is better than complex.</b></li>)
   @size[24px](<li><b>Complex is better than complicated.</b></li>)
   @size[24px](<li>Flat is better than nested.</li>)
@@ -38,6 +43,11 @@ import this
   </ol>
 </div>
 
+Note:
+
+- Tim Peters, fő munkatárs
+- CPython
+- Python tervezési filozófiája, igy irjuk a python kódunkat
 
 ---
 
@@ -59,10 +69,15 @@ Note:
 ### Interpretált
 
 - A kódot egy értelmező dolgozza fel
-- Nem kell fordítani
 - Platformfüggetlen
+- Sok féle megvalósítás(CPython, PyPy, ...)
 
 Note:
+
+- Cpython Tim Peters Zen Of Python
+- PyPy (C, CLI, JVM), 5x gyorsabb
+- Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
+- PythonNet
 
 ---
 
@@ -78,6 +93,11 @@ Note:
 ---
 
 ![Python is awsome!](https://cdn-images-1.medium.com/max/800/0*_e09A-2xg4x7PG_A.)
+
+
+Note:
+
+- csomagkezelés, mindenre is van csomag
 
 ---
 
@@ -98,11 +118,20 @@ NEM!
 
 Note:
 
+- alacsonyszintű nyelvekhez képest, c, c++
+- pl: nem kell memoria teruletet foglalni
+
 +++
 
 ![C++ vs Python3](https://raw.githubusercontent.com/DevTeamSCH/python-kszkepzes/master/media/c%2B%2B_vs_python.png)
 
 Note:
+N-body
+ - dinamikus rendszer
+ - általában fizikai erőkkel szimulálva
+ - pl galaxysok vizsgalata
+ - Jupiter, Saturn, Uranus and Neptune
+
  https://en.wikipedia.org/wiki/N-body_simulation
 ---
 
@@ -497,7 +526,7 @@ False
 +++
 
 ```python
-def fibonacci():
+def fibonacci(n):
     if n == 0:
         return 0
     elif n == 1:
@@ -562,6 +591,10 @@ Output:
 ```python
 -8
 ```
+
+Note:
+- miért van a first paraméter?
+- mert a min fgv 0 paraméterre nem értelmes 
 
 +++
 
@@ -719,7 +752,7 @@ Hello
 
 ```python
 class A:
-    b = "Foo"
+    _b = "Foo"
 
     def __init__(self):
         self.a = 1
@@ -751,6 +784,10 @@ Foo ρ Fej
 Foo ρ Fej
 Foo ρ Fej
 ```
+
+---
+
+### Workshop
 
 ---
 
