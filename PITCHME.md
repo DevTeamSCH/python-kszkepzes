@@ -2,6 +2,7 @@
 
 ```python
 import this
+
 ```
 
 ---
@@ -108,42 +109,42 @@ Note:
 ### Csomagok
 
 - Webfejlesztés:
-    - Django
-    - Flusk
-    - Requests
+  - Django
+  - Flusk
+  - Requests
 
 +++
 
 - IT Security:
-    - Scapy
-    - Nmap
+  - Scapy
+  - Nmap
 
 +++
 
 - AI:
-    - TensorFlow
-    - Keras
+  - TensorFlow
+  - Keras
 
 +++
 
 - Data Science:
-    - Pandas
-    - StatsModels
-    - NumPy
+  - Pandas
+  - StatsModels
+  - NumPy
 
 +++
 
 - GUI:
-    - PyQt
-    - Tkinter
-    - Flexx
+  - PyQt
+  - Tkinter
+  - Flexx
  
 +++
 
 - Data visualization
-    - matplotlib
-    - Plotly
-    - geoplotlib
+  - matplotlib
+  - Plotly
+  - geoplotlib
 Note:
 
 ---
@@ -162,7 +163,7 @@ Note:
 +++
 
 ```bash
-pip install flake8
+pip install <package>
 ```
 
 ---
@@ -210,6 +211,16 @@ source venv/bin/activate
   - Rossz formázás
 - pep8(Style Guide)
 
+
+
+```cmd
+pip install black
+```
+
+```cmd
+flake8 <filename>
+```
+
 Note:
 
 - Style Guide
@@ -219,12 +230,27 @@ Note:
 
 ---
 
+### Black
+
+- Atomatikusan formázza a kódot.
+
+```cmd
+pip install black
+```
+
+```cmd
+black <filename>
+```
+
+---
+
 ### Hello World
 
 +++
 
 ```python
 print("Hello World!")
+
 ```
 
 +++
@@ -238,11 +264,12 @@ from colorama import init
 from colorama import Fore, Back, Style
 
 init()
-print(Fore.RED + 'some red text')
-print(Back.GREEN + 'and with a green background')
-print(Style.DIM + 'and in dim text')
+print(Fore.RED + "some red text")
+print(Back.GREEN + "and with a green background")
+print(Style.DIM + "and in dim text")
 print(Style.RESET_ALL)
-print('back to normal now')
+print("back to normal now")
+
 ```
 
 ---
@@ -250,18 +277,19 @@ print('back to normal now')
 ### Szintaxis
 
 ```python
-'''This is the start of the program '''
+"""This is the start of the program """
 while 1:
-    print ('Spam')
-    answer = input('Press y for large fries ')
-    if answer == 'y':
-        print ('Large fries with spam, mmmm, yummy ')
+    print("Spam")
+    answer = input("Press y for large fries ")
+    if answer == "y":
+        print("Large fries with spam, mmmm, yummy ")
         continue
-    answer = input('Had enough yet? ')
-    if answer == 'y':
+    answer = input("Had enough yet? ")
+    if answer == "y":
         break
-print ('Have a ')
-print ('nice day!') #Bye bye
+print("Have a ")
+print("nice day!")  # Bye bye
+
 ```
 
 Note:
@@ -285,33 +313,32 @@ Note:
 ```python
 a = 2
 b = 3.2
-d = 2+4j
+d = 2 + 4j
 x = False
 str = "string"
 str2 = str * 2
 str3 = str2 + "abc"
-```
 
-+++
-
-```python
 print(a ** 3)
 print(b / 2)
 print(d * 2)
 print(x)
 print(str)
-print(str1)
 print(str2)
+print(str3)
+
 ```
+
+Output
 
 ```python
 8
 1.6
-4+8j
+(4+8j)
 False
 string
 stringstring
-stringabc
+stringstringabc
 ```
 
 ---
@@ -327,13 +354,14 @@ stringabc
 +++
 
 ```python
-list = ['a', 'b', 'c', 1, 2, 3]
+list = ["a", "b", "c", 1, 2, 3]
 for a in list:
     print(a)
 list[4] = 22
 list.append(50)
-del(list[3])
+del list[3]
 print(list[2:])
+
 ```
 
 Output:
@@ -360,7 +388,7 @@ c
 +++
 
 ```python
-tuple = ('a', 'b', 3)
+tuple = ("a", "b", 3)
 item = tuple[2]
 for a in tuple:
     print(a)
@@ -368,9 +396,10 @@ for a in tuple:
 a, b, c = tuple
 print(c)
 
-tuple2 = (34, 56, 'd')
+tuple2 = (34, 56, "d")
 tuple3 = tuple + tuple2
 print(tuple3)
+
 ```
 
 Output:
@@ -397,13 +426,14 @@ b
 +++
 
 ```python
-dict = {'Name': 'Zara', 'Age': 10 , 'Class': 'First'}
+dict = {"Name": "Zara", "Age": 10, "Class": "First"}
 
-dict['Age'] = 8
+dict["Age"] = 8
 for key, value in dict.items():
-    print (key, " : ", value)
-del dict['Name']
-print('Name' in dict)
+    print(key, " : ", value)
+del dict["Name"]
+print("Name" in dict)
+
 ```
 
 Output:
@@ -431,9 +461,10 @@ set = {1, 3, 5}
 print(1 in set)
 print(2 in set)
 set.add(2)
-set.update([6,4])
+set.update([6, 4])
 for a in set:
     print(a)
+
 ```
 
 Output:
@@ -456,10 +487,23 @@ False
 +++
 
 ```python
-def fibonacci(n):
-    if n == 0: return 0
-    elif n == 1: return 1
-    else: return F(n-1)+F(n-2)
+def fibonacci():
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+print(fibonacci(10))
+
+```
+
+Output:
+
+```python
+55
 ```
 
 +++
@@ -467,15 +511,28 @@ def fibonacci(n):
 - Opciónális paraméter
 
 ```python
-def fibonacci(n = 10):
-    if n == 0: return 0
-    elif n == 1: return 1
-    else: return F(n-1)+F(n-2)
+def fibonacci(n=10):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+print(fibonacci())
+
+```
+
+Output:
+
+```python
+55
 ```
 
 +++
 
-- Tetszőlegesen sok paraméter
+- Tetszőlegesen sok paraméter, list
 
 ```python
 def minimum(first, *args):
@@ -485,7 +542,35 @@ def minimum(first, *args):
             acc = x
     return acc
 
+
 print(minimum(3, 4, 2, -8, 6))
+
+```
+
+Output:
+
+```python
+-8
+```
+
++++
+
+- Tetszőlegesen sok paraméter, dictionary
+
+```python
+def bar(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+
+print(bar(Kutya="vau", Cica="miaaau"))
+
+```
+
+Output:
+
+```python
+-8
 ```
 
 +++
@@ -498,9 +583,23 @@ def print_rectangle(w=0, h=0, x=0, y=0):
     print("- size: {}×{}".format(w, h))
     print("- position: ({};{})".format(x, y))
 
+
 print_rectangle(20, 30, 40, 50)
 print_rectangle(x=10, w=19, h=25)
+
 ```
+
+Output:
+
+```python
+Rectangle
+- size: 20×30
+- position: (40;50)
+Rectangle
+- size: 19×25
+- position: (10;0)
+```
+
 
 ---
 
@@ -508,20 +607,16 @@ print_rectangle(x=10, w=19, h=25)
 
 ```python
 dir(__builtins__)
+
 ```
 
 +++
 
 - input() Allowing user input
-
 - len() Returns the length of an object
-
 - abs() Returns the absolute value of a number
-
 - slice() Returns a slice object
-
 - ...
-
 - https://www.w3schools.com/python/python_ref_functions.asp
 
 ---
@@ -539,6 +634,7 @@ i = 1
 while i < 6:
     print(i)
     i += 1
+
 ```
 
 Output:
@@ -566,6 +662,7 @@ print("-")
 
 for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
     print(x)
+
 ```
 
 Output:
@@ -595,6 +692,7 @@ elif b or x > 5:
    print("World!")
 else:
    print("Hello World!")
+
 ```
 
 Output:
@@ -604,6 +702,45 @@ Hello
 ```
 
 ---
+
+### Osztályok
+
++++
+
+```python
+class A:
+    b = "Foo"
+
+    def __init__(self):
+        self.a = 1
+
+    def print(self, str):
+        for x in range(self.a):
+            print(self.b, str)
+
+
+class B(A):
+    def __init__(self, a):
+        self.a = a
+
+
+a = A()
+a.print("Fighters")
+b = B(5)
+b.print("Ró" "Fej")
+
+---
+
+Output
+
+```python
+Foo Fighters
+Foo RóFej
+Foo RóFej
+Foo RóFej
+Foo RóFej
+Foo RóFej
+```
 
 ### Dekorátor
 
@@ -621,6 +758,7 @@ def my_decorator(func):
 @my_decorator
 def hello():
     print("Hello")
+
 ````
 
 Output:
@@ -629,27 +767,4 @@ Output:
 Before
 Hello
 After
-```
-
----
-
-### Osztályok
-
-+++
-
-```python
-class Employee:
-   'Common base class for all employees'
-   empCount = 0
-
-   def __init__(self, name, salary):
-      self.name = name
-      self.salary = salary
-      Employee.empCount += 1
-
-   def displayCount(self):
-     print ("Total Employee %d" % Employee.empCount)
-
-   def displayEmployee(self):
-      print ("Name : ", self.name,  ", Salary: ", self.salary)
 ```
