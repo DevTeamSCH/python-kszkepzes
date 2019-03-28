@@ -417,6 +417,15 @@ c
 
 ---
 
+### Mit ír ki?
+
+```python
+list = ["SCH", (), 105, "KSZK", "ujonc", 69.69, []]
+print list[2:4]
+```
+
+---
+
 ### Tuple
 
 +++
@@ -547,7 +556,7 @@ Output:
 
 +++
 
-- Opciónális paraméter
+- Opcionális paraméter
 
 ```python
 def fibonacci(n=10):
