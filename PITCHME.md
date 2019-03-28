@@ -729,6 +729,8 @@ a.print("Fighters")
 b = B(5)
 b.print(u"\u03C1" + " Fej")
 
+```
+
 ---
 
 Output
@@ -742,11 +744,13 @@ Foo ρ Fej
 Foo ρ Fej
 ```
 
-### Dekorátor
-
-+++
+---
 
 ### HF
+
+---
+
+### Dekorátor
 
 +++
 
