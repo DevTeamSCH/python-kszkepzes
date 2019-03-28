@@ -214,7 +214,7 @@ source venv/bin/activate
 
 
 ```cmd
-pip install black
+pip install flake8
 ```
 
 ```cmd
@@ -727,7 +727,7 @@ class B(A):
 a = A()
 a.print("Fighters")
 b = B(5)
-b.print("Ró" "Fej")
+b.print(u"\u03C1" + " Fej")
 
 ---
 
@@ -735,14 +735,18 @@ Output
 
 ```python
 Foo Fighters
-Foo RóFej
-Foo RóFej
-Foo RóFej
-Foo RóFej
-Foo RóFej
+Foo ρ Fej
+Foo ρ Fej
+Foo ρ Fej
+Foo ρ Fej
+Foo ρ Fej
 ```
 
 ### Dekorátor
+
++++
+
+### HF
 
 +++
 
