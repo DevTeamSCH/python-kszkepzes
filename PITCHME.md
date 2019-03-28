@@ -718,11 +718,9 @@ class A:
         for x in range(self.a):
             print(self.b, str)
 
-
 class B(A):
     def __init__(self, a):
         self.a = a
-
 
 a = A()
 a.print("Fighters")
