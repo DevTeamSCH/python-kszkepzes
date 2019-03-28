@@ -729,8 +729,6 @@ b.print(u"\u03C1" + " Fej")
 
 ```
 
----
-
 Output
 
 ```python
