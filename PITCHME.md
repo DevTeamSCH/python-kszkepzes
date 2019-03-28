@@ -314,19 +314,10 @@ Note:
 a = 2
 b = 3.2
 d = 2 + 4j
-x = False
-str = "string"
-str2 = str * 2
-str3 = str2 + "abc"
 
 print(a ** 3)
 print(b / 2)
 print(d * 2)
-print(x)
-print(str)
-print(str2)
-print(str3)
-
 ```
 
 Output
@@ -335,6 +326,25 @@ Output
 8
 1.6
 (4+8j)
+```
+
++++
+
+```python
+x = False
+str = "string"
+str2 = str * 2
+str3 = str2 + "abc"
+
+print(x)
+print(str)
+print(str2)
+print(str3)
+```
+
+output
+
+```python
 False
 string
 stringstring
@@ -731,7 +741,7 @@ b.print(u"\u03C1" + " Fej")
 
 +++
 
-Output
+Output:
 
 ```python
 Foo Fighters
