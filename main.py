@@ -1,6 +1,5 @@
 import sys
 from PySide2.QtWidgets import QApplication, QMainWindow
-from PySide2.QtCore import QFile, QByteArray
 from PySide2.QtNetwork import QTcpSocket
 from ui_mainwindow import Ui_MainWindow
 

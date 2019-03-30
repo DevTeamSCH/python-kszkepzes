@@ -1,0 +1,6 @@
+{
+    "app_name": "chat",
+    "author": "Bodnár Zsombor",
+    "main_module": "src/main/python/main.py",
+    "version": "1"
+}
