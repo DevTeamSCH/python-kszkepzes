@@ -103,13 +103,13 @@ Note:
 
 ### Tökéletes?!
 
-+++
+---
 
 ### Tökéletes?!
 
 NEM!
 
-+++
+---
 
 ### Tökéletes?!
 
@@ -121,7 +121,7 @@ Note:
 - alacsonyszintű nyelvekhez képest, c, c++
 - pl: nem kell memoria teruletet foglalni
 
-+++
+---
 
 ![C++ vs Python3](https://raw.githubusercontent.com/DevTeamSCH/python-kszkepzes/master/media/c%2B%2B_vs_python.png)
 
@@ -142,33 +142,33 @@ N-body
   - Flusk
   - Requests
 
-+++
+---
 
 - IT Security:
   - Scapy
   - Nmap
 
-+++
+---
 
 - AI:
   - TensorFlow
   - Keras
 
-+++
+---
 
 - Data Science:
   - Pandas
   - StatsModels
   - NumPy
 
-+++
+---
 
 - GUI:
   - PyQt
   - Tkinter
   - Flexx
  
-+++
+---
 
 - Data visualization
   - matplotlib
@@ -178,111 +178,17 @@ Note:
 
 ---
 
-### Pip
-
-- Csomagkezelő
-  - Egy helyen van minden
-  - Könnyen használható
-
-Note:
-
-- könnyen használható
-  - C++ ban jóval nehezebb lib import
-
-+++
-
-```bash
-pip install <package>
-```
-
----
-
-### Virtualenv
-
-- Saját környezet minden projekthez
-
-Note:
-
-- Dependency, egy csomag több verzió
-
-+++
-
-- Windows:
-
-```cmd
-python -m venv venv
-```
-
-```cmd
-venv\Scripts\activate.bat
-```
-
-+++
-
-- Linux:
-
-```bash
-python3 -m venv venv
-```
-
-```bash
-source venv/bin/activate
-```
-
----
-
-### Flake8
-
-- Linter
-- Segít jobb kódot írni:
-  - Syntax error
-  - Typo
-  - Rossz formázás
-- pep8(Style Guide)
-
-
-
-```cmd
-pip install flake8
-```
-
-```cmd
-flake8 <filename>
-```
-
-Note:
-
-- Style Guide
-  - átlátható
-  - egységes
-  - kevesebb merge conflict
-
----
-
-### Black
-
-- Atomatikusan formázza a kódot.
-
-```cmd
-pip install black
-```
-
-```cmd
-black <filename>
-```
-
----
 
 ### Hello World
 
-+++
+---
 
 ```python
 print("Hello World!")
 
 ```
 
-+++
+---
 
 ```bash
 pip install colorama
@@ -337,7 +243,7 @@ Note:
 - string
 - list, tuple, dictionary, ...
 
-+++
+---
 
 ```python
 a = 2
@@ -357,7 +263,7 @@ Output
 (4+8j)
 ```
 
-+++
+---
 
 ```python
 x = False
@@ -384,35 +290,35 @@ stringstringabc
 
 ### List
 
-+++
+```python
+list = ["a", "b", "c", 1, 2, 3]
+```
 
 - Bármilyen típust tartalmazhat (általában egyforma)
-- Az elemek indexelhetőek
 - Módosítható(mutable)
+- Az elemek indexelhetőek
 
-+++
+---
 
 ```python
 list = ["a", "b", "c", 1, 2, 3]
-for a in list:
-    print(a)
+print(list)
 list[4] = 22
 list.append(50)
 del list[3]
+print(list[2:5])
 print(list[2:])
+print(list[:4])
 
 ```
 
 Output:
 
 ```python
-a
-b
-c
-1
-2
-3
+['a', 'b', 'c', 1, 2, 3]
+['c', 22, 3]
 ['c', 22, 3, 50]
+['a', 'b', 'c', 22]
 ```
 
 ---
@@ -420,76 +326,103 @@ c
 ### Mit ír ki?
 
 ```python
-list = ["SCH", (), 105, "KSZK", "ujonc", 69.69, []]
-print list[2:4]
+list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "utca"], 69.69, []]
+print(list[-5:-3])
+
+```
+
+---
+
+```python
+list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "utca"], 69.69, []]
+print(list[-5:-3])
+
+```
+
+Output:
+
+```python
+['KSZK', '105']
 ```
 
 ---
 
 ### Tuple
 
-+++
+```python
+tuple = ("a", "b", 3, 4)
+```
 
 - Ugyanaz, mint egy lista
 - De nem módosítható(immutable)
 
-+++
+---
 
 ```python
-tuple = ("a", "b", 3)
+tuple = ("a", "b", 3, 4)
 item = tuple[2]
-for a in tuple:
-    print(a)
+print(tuple)
 
-a, b, c = tuple
+a, b, c, d = tuple
 print(c)
 
 tuple2 = (34, 56, "d")
 tuple3 = tuple + tuple2
 print(tuple3)
 
+length = len(tuple3)
+print(length)
+
 ```
 
 Output:
 
 ```python
-a
-b
-3
+('a', 'b', 3, 4)
 
 3
 
-('a', 'b', 3, 34, 56, 'd')
+('a', 'b', 3, 4, 34, 56, 'd')
+
+7
 ```
 
 ---
 
 ### Dictionary
 
-+++
+```python
+dict = {"Name": "Zara", "Age": 10, "Class": "First"}
+```
 
 - Kulcs érték pár
-- A kulcs egyedi, érték bármi lehet
+- Kulcs csak string, egyedi érték
+- Érték bármilyen típusú lehet
+- Kulcsal indexelhető
+- Mutable
 
-+++
+---
 
 ```python
 dict = {"Name": "Zara", "Age": 10, "Class": "First"}
+print(dict)
 
-dict["Age"] = 8
-for key, value in dict.items():
-    print(key, " : ", value)
+dict["Pet"] = "Dog"
+print(dict["Pet"])
+
 del dict["Name"]
-print("Name" in dict)
+bool = "Name" in dict
+print(bool)
 
 ```
 
 Output:
 
 ```python
-Name  :  Zara
-Age  :  8
-Class  :  First
+{'Name': 'Zara', 'Age': 10, 'Class': 'First'}
+
+Dog
+
 False
 ```
 
@@ -497,42 +430,117 @@ False
 
 ### Set
 
-+++
+```python
+set = {1, 3, 5}
+```
 
-- Mint a lista, csak minden érték egyszer szerepelhet
-- Nem biztos, hogy sorban tárolja
+- Mint a lista, csak minden érték egyszer szerepelhet benne
+- Nem indexelhető
+- Nem biztos, hogy sorban tárolja az elemeket
+- Mutable
 
-+++
+---
 
 ```python
 set = {1, 3, 5}
+print(set)
+
 print(1 in set)
 print(2 in set)
+
 set.add(2)
-set.update([6, 4])
-for a in set:
-    print(a)
+set.update([6, 4, 1])
+print(set)
+
+set2 = {2, 6, 10, 11}
+union = set.union(set2)
+print(union)
 
 ```
 
 Output:
 
 ```python
+{1, 3, 5}
+
 True
 False
+
+{1, 2, 3, 4, 5, 6}
+
+{1, 2, 3, 4, 5, 6, 10, 11}
+```
+
+---
+
+## Ciklusok
+
+---
+
+### While
+
+```python
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+```
+
+Output:
+
+```python
 1
 2
 3
 4
 5
-6
+```
+
+---
+
+### For(each)
+
+```python
+a = [1, 2, 3]
+for x in a:
+    print(x)
+
+ls = list(range(5))
+print(ls)
+
+for x in range(1, 6, 2):  # for (int i = 1; i < 6; i += 2)
+    print(x)
+
+```
+
+Output:
+
+```python
+1
+2
+3
+
+[0, 1, 2, 3, 4]
+
+1
+3
+5
 ```
 
 ---
 
 ### Függvények
 
-+++
+```python
+def function(): # void function() {}
+    pass
+```
+
+- Hasonlít a C, C++ fügvényekre
+- Nem kell előre megadni a visszatérési értéket, változók tipusát
+
+---
 
 ```python
 def fibonacci(n):
@@ -554,7 +562,7 @@ Output:
 55
 ```
 
-+++
+---
 
 - Opcionális paraméter
 
@@ -578,54 +586,7 @@ Output:
 55
 ```
 
-+++
-
-- Tetszőlegesen sok paraméter, list
-
-```python
-def minimum(first, *args):
-    acc = first
-    for x in args:
-        if x < acc:
-            acc = x
-    return acc
-
-
-print(minimum(3, 4, 2, -8, 6))
-
-```
-
-Output:
-
-```python
--8
-```
-
-Note:
-- miért van a first paraméter?
-- mert a min fgv 0 paraméterre nem értelmes 
-
-+++
-
-- Tetszőlegesen sok paraméter, dictionary
-
-```python
-def bar(**kwargs):
-    for key, value in kwargs.items():
-        print(key, value)
-
-
-print(bar(Kutya="vau", Cica="miaaau"))
-
-```
-
-Output:
-
-```python
--8
-```
-
-+++
+---
 
 - Névszerinti paraméterátadás
 
@@ -652,17 +613,71 @@ Rectangle
 - position: (10;0)
 ```
 
+---
+
+- Tetszőlegesen sok paraméter, list
+
+```python
+def minimum(first, *args):
+    acc = first
+    for x in args:
+        if x < acc:
+            acc = x
+    return acc
+
+
+print(minimum(3, 4, 2, -8, 6))
+
+```
+
+Output:
+
+```python
+-8
+```
+
+Note:
+
+- miért van a first paraméter?
+- mert a min fgv 0 paraméterrel nem értelmes
+
+---
+
+- Tetszőlegesen sok paraméter, dictionary
+
+```python
+def bar(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+
+bar(Kutya="vau", Cica="miaaau")
+
+```
+
+Output:
+
+```python
+Kutya vau
+Cica miaaau
+```
 
 ---
 
 ### Alap beépített fgv-ek
 
 ```python
-dir(__builtins__)
+print(dir(__builtins__))
 
 ```
 
-+++
+Output
+
+```python
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefu', ...]
+```
+
+---
 
 - input() Allowing user input
 - len() Returns the length of an object
@@ -673,67 +688,9 @@ dir(__builtins__)
 
 ---
 
-### Ciklusok
-
----
-
-### While
-
-+++
-
-```python
-i = 1
-while i < 6:
-    print(i)
-    i += 1
-
-```
-
-Output:
-
-```python
-1
-2
-3
-4
-5
-```
-
----
-
-### For(each)
-
-+++
-
-```python
-a = [1, 2, 3]
-for x in a:
-    print(x)
-
-print("-")
-
-for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
-    print(x)
-
-```
-
-Output:
-
-```python
-1
-2
-3
--
-1
-3
-5
-```
-
----
-
 ### Elágazások
 
-+++
+---
 
 ```python
 b = False
@@ -757,7 +714,7 @@ Hello
 
 ### Osztályok
 
-+++
+---
 
 ```python
 class A:
@@ -768,7 +725,7 @@ class A:
 
     def print(self, str):
         for x in range(self.a):
-            print(self.b, str)
+            print(self._b, str)
 
 class B(A):
     def __init__(self, a):
@@ -781,7 +738,7 @@ b.print(u"\u03C1" + " Fej")
 
 ```
 
-+++
+---
 
 Output:
 
@@ -796,6 +753,99 @@ Foo ρ Fej
 
 ---
 
+### Pip
+
+- Csomagkezelő
+  - Egy helyen van minden
+  - Könnyen használható
+
+Note:
+
+- könnyen használható
+  - C++ ban jóval nehezebb lib import
+
+---
+
+```bash
+pip install <package>
+```
+
+---
+
+### Virtualenv
+
+- Saját környezet minden projekthez
+
+Note:
+
+- Dependency, egy csomag több verzió
+
+---
+
+- Windows:
+
+```cmd
+python -m venv venv
+```
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+---
+
+- Linux:
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### Flake8
+
+- Linter
+- Segít jobb kódot írni:
+  - Syntax error
+  - Typo
+  - Rossz formázás
+- pep8(Style Guide)
+
+```cmd
+pip install flake8
+```
+
+```cmd
+flake8 <filename>
+```
+
+Note:
+
+- Style Guide
+  - átlátható
+  - egységes
+  - kevesebb merge conflict
+
+---
+
+### Black
+
+- Atomatikusan formázza a kódot.
+
+```cmd
+pip install black
+```
+
+```cmd
+black <filename>
+```
+
+---
+
 ### Workshop
 
 ---
@@ -806,7 +856,7 @@ Foo ρ Fej
 
 ### Dekorátor
 
-+++
+---
 
 ```python
 def my_decorator(func):
@@ -821,7 +871,7 @@ def my_decorator(func):
 def hello():
     print("Hello")
 
-````
+```
 
 Output:
 
