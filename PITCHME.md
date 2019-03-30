@@ -9,7 +9,7 @@ Note:
 
 - Ki ismeri a Pythont?
 - Ki tudja mit csinál a kód?
-
+- Nézzük meg mit is csinál.
 ---
 
 ### The Zen of Python, by Tim Peters
@@ -45,8 +45,9 @@ Note:
 
 Note:
 
-- Tim Peters, fő munkatárs
-- CPython
+- Kiírja a Zen of Pythont
+- Kiemeltem párat nektek, amit fontosnak tartok
+- De mi is ez?
 - Python tervezési filozófiája, igy irjuk a python kódunkat
 
 ---
@@ -54,15 +55,19 @@ Note:
 ### Története
 
 - Guido van Rossum
-- 1991-ben jött létre
+- 1991 Python 1
 - Magas szintű programozási nyelv
 
 Note:
 
-- BDFL (Benevolent dictator for life)
-- Monty Python, karácsony
-- könnyen olvasható, tanulható, gyors fejlesztés
-- lassú
+- 89 karácsonya előtt
+- 1 hét szünete -> Ír egy programnyelvet, amit egyszerű használni
+- Kedven sorozatárol a Monty Python
+- 1991 első verzió
+- Magas szintű jellemzői:
+  - könnyen olvasható, tanulható, gyors fejlesztés
+  - lassú
+- (BDFL (Benevolent dictator for life))
 
 ---
 
@@ -74,10 +79,13 @@ Note:
 
 Note:
 
-- Cpython Tim Peters Zen Of Python
+- Python interpretált nyelv
+- Az interpreter dolgozz fel és futtatja a kódot
+- Mivel nem a rendszer futatja a kódot, hanem az értelmező
+- nincs platformhoz kötve, értelmezőnek kell lennie
+- Sok féle megvalósítás -> alap: Cpython
 - PyPy (C, CLI, JVM), 5x gyorsabb
-- Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
-- PythonNet
+- Létezik java és dotnet alapú is
 
 ---
 
@@ -89,6 +97,8 @@ Note:
   - Könnyen tanulható, gyors fejlesztés
 - Interpretált:
   - Bárhol lefut, nem kell lefordítani
+- Mindent is lehet benne csinálni
+- Vicc : Bármit akarunk a második legjobb választás 
 
 ---
 
@@ -126,17 +136,27 @@ Note:
 ![C++ vs Python3](https://raw.githubusercontent.com/DevTeamSCH/python-kszkepzes/master/media/c%2B%2B_vs_python.png)
 
 Note:
+
+- Mint láthatjuk sokkal lasabb
+
+Mandelbrot:
+
+- Fraktál 
+
 N-body
- - dinamikus rendszer
- - fizikai erőkkel szimulálva
- - pl galaxysok vizsgalata
- - Jupiter, Saturn, Uranus and Neptune
- - https://en.wikipedia.org/wiki/N-body_simulation
+
+- dinamikus rendszer
+- fizikai erőkkel szimulálva
+- pl Bolygók egymásra hatását
 
 ---
 
 ### Hello World
 
+Note:
+
+- Kezdjük is el írni az első programunkat
+- Mint minden nyelven a Hello Worldot
 ---
 
 ```python
@@ -152,7 +172,7 @@ print("Hello World!")
 """This is the start of the program """
 while 1:
     print("Spam")
-    answer = input("Press y for large fries ")
+    answer = input("Press 'y' for large fries ")
     if answer == "y":
         print('Large fries with spam, mmmm, yummy ')
         continue
@@ -166,11 +186,13 @@ print("nice day!")  # Bye bye
 
 Note:
 
-- Nincs sorvég jel
+- Pythonak eltérő a szintaxisa a C C++ képest
+- Nincs pontosvessző a sor végén
 - A kód blokkokként indentálva vannak, nincs kapcsoszárójel
+  - AMi ugyananyira van behuzva az egy blokk
   - 4 space
 - '' vagy ""
-- komment #, '''alam'''
+- komment sorvége: #, hosszú:  '''alam'''
 
 ---
 
@@ -180,6 +202,11 @@ Note:
 - boolean
 - string
 - list, tuple, dictionary, ...
+
+Note:
+
+- Mint láthatjátok vannak számok, boolok, stringek
+- egyébb adattípusok: list, tuple
 
 ---
 
@@ -200,6 +227,9 @@ Output
 1.6
 (4+8j)
 ```
+
+Note: 
+d komplex
 
 ---
 
@@ -224,6 +254,10 @@ stringstring
 stringstringabc
 ```
 
+Note:
+
+-Konkatenálni
+
 ---
 
 ### List
@@ -235,6 +269,10 @@ list = ["a", "b", "c", 1, 2, 3]
 - Bármilyen típust tartalmazhat (általában egyforma)
 - Módosítható(mutable)
 - Indexelhető
+
+Note:
+
+- Ez áll legközelebb a C tömbhöz
 
 ---
 
@@ -258,6 +296,16 @@ Output:
 ['c', 22, 3, 50]
 ['a', 'b', 'c', 22]
 ```
+
+Note:
+- Hozzunk ltre egy listát
+- print bármit megeszik
+- indexelhető, 2 -> 22
+- hozzáfuzhetünk a lista végére
+- del törli a vátozót, minhta nem inicializátuk volna
+- többféleképpen indexelhető, adhatunk meg intervallumot
+- mettől
+- meddig
 
 ---
 
@@ -489,6 +537,7 @@ print(sum)
 Output
 
 ```python
+[12, 10, 8, 6, 4]
 40
 ```
 
@@ -717,7 +766,7 @@ Foo ρ Fej
 ### Modul
 
 - Python forráskódot tartalmazó fájlok
-- Segítségükkel több fájlba tudjuk bontani a kódunkat
+- Segítségükkel több fájlra tudjuk bontani a kódunkat
 
 fruite.py
 
@@ -753,12 +802,12 @@ Note:
 ```python
 sound/                          Top-level package
       __init__.py               Initialize the sound package
-      formats/                  Subpackage for file format conversions
+      formats/                  Subpackage
               __init__.py
               wavread.py
               wavwrite.py
               ...
-      effects/                  Subpackage for sound effects
+      effects/                  Subpackage
               __init__.py
               echo.py
               surround.py
@@ -773,16 +822,14 @@ sound/                          Top-level package
   - Egy helyen van minden
   - Könnyen használható
 
+```bash
+pip install <package>
+```
+
 Note:
 
 - könnyen használható
   - C++ ban jóval nehezebb lib import
-
----
-
-```bash
-pip install <package>
-```
 
 ---
 
@@ -954,3 +1001,8 @@ Before
 Hello
 After
 ```
+- Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
+- PythonNet
+
+ Jupiter, Saturn, Uranus and Neptune
+- https://en.wikipedia.org/wiki/N-body_simulation
