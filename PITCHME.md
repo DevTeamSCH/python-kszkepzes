@@ -135,48 +135,6 @@ N-body
  https://en.wikipedia.org/wiki/N-body_simulation
 ---
 
-### Csomagok
-
-- Webfejlesztés:
-  - Django
-  - Flusk
-  - Requests
-
----
-
-- IT Security:
-  - Scapy
-  - Nmap
-
----
-
-- AI:
-  - TensorFlow
-  - Keras
-
----
-
-- Data Science:
-  - Pandas
-  - StatsModels
-  - NumPy
-
----
-
-- GUI:
-  - PyQt
-  - Tkinter
-  - Flexx
- 
----
-
-- Data visualization
-  - matplotlib
-  - Plotly
-  - geoplotlib
-Note:
-
----
 
 
 ### Hello World
@@ -843,6 +801,49 @@ pip install black
 ```cmd
 black <filename>
 ```
+
+---
+
+### Csomagok
+
+- Webfejlesztés:
+  - Django
+  - Flusk
+  - Requests
+
+---
+
+- IT Security:
+  - Scapy
+  - Nmap
+
+---
+
+- AI:
+  - TensorFlow
+  - Keras
+
+---
+
+- Data Science:
+  - Pandas
+  - StatsModels
+  - NumPy
+
+---
+
+- GUI:
+  - PyQt
+  - Tkinter
+  - Flexx
+
+---
+
+- Data visualization
+  - matplotlib
+  - Plotly
+  - geoplotlib
+Note:
 
 ---
 
