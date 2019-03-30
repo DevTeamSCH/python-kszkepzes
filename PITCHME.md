@@ -939,12 +939,14 @@ Note:
 - Style Guide
   - átlátható
   - egységes --> kevesebb merge conflict
+-PEP (Python Enháncment Propózolsz)
+
 
 ---
 
 ### Black
 
-- Atomatikusan formázza a kódot.
+- Atomatikusan formázza a kódot
 
 ```cmd
 pip3 install black
@@ -954,6 +956,10 @@ pip3 install black
 python3 -m black <filename>
 ```
 
+Note:
+
+- flake8 megfelel
+
 ---
 
 ### Csomagok
@@ -962,6 +968,10 @@ python3 -m black <filename>
   - Django
   - Flask
   - Requests
+
+Note:
+
+- Hasznos csomagok, témakörönként
 
 ---
 
@@ -982,6 +992,9 @@ python3 -m black <filename>
   - StatsModels
   - NumPy
 
+Note:
+- Miért ha a python lassú, miért nem c++?
+- Pythont prototipus készítésre használjuk, élesben(producton) C++
 ---
 
 - GUI:
