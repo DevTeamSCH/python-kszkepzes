@@ -128,11 +128,11 @@ Note:
 Note:
 N-body
  - dinamikus rendszer
- - általában fizikai erőkkel szimulálva
+ - fizikai erőkkel szimulálva
  - pl galaxysok vizsgalata
  - Jupiter, Saturn, Uranus and Neptune
+ - https://en.wikipedia.org/wiki/N-body_simulation
 
- https://en.wikipedia.org/wiki/N-body_simulation
 ---
 
 ### Hello World
@@ -154,9 +154,9 @@ while 1:
     print("Spam")
     answer = input("Press y for large fries ")
     if answer == "y":
-        print("Large fries with spam, mmmm, yummy ")
+        print('Large fries with spam, mmmm, yummy ')
         continue
-    answer = input("Had enough yet? ")
+    answer = input('Had enough yet? ')
     if answer == "y":
         break
 print("Have a ")
@@ -167,8 +167,9 @@ print("nice day!")  # Bye bye
 Note:
 
 - Nincs sorvég jel
-- A kód blokkok indentálva vannak nincs kapcsoszárójel
+- A kód blokkokként indentálva vannak, nincs kapcsoszárójel
   - 4 space
+- '' vagy ""
 - komment #, '''alam'''
 
 ---
@@ -206,7 +207,7 @@ Output
 x = False
 str = "string"
 str2 = str * 2
-str3 = str2 + "abc"
+str3 = str2 + 'abc'
 
 print(x)
 print(str)
@@ -320,11 +321,8 @@ Output:
 
 ```python
 ('a', 'b', 3, 4)
-
 3
-
 ('a', 'b', 3, 4, 34, 56, 'd')
-
 7
 ```
 
@@ -403,12 +401,9 @@ Output:
 
 ```python
 {1, 3, 5}
-
 True
 False
-
 {1, 2, 3, 4, 5, 6}
-
 {1, 2, 3, 4, 5, 6, 10, 11}
 ```
 
@@ -446,13 +441,10 @@ Output:
 a = [1, 2, 3]
 for x in a:
     print(x)
-
 ls = list(range(5))
 print(ls)
-
 for x in range(1, 6, 2):  # for (int i = 1; i < 6; i += 2)
     print(x)
-
 ```
 
 Output:
@@ -467,6 +459,37 @@ Output:
 1
 3
 5
+```
+
+---
+
+### Mit ír ki?
+
+```python
+sum = 0
+for i in range(12, 2, -2):
+    sum += i
+print(sum)
+
+```
+
+---
+
+### Mit ír ki?
+
+```python
+sum = 0
+for i in range(12, 2, -2):
+    sum += i
+print(list(range(12, 2, -2)))
+print(sum)
+
+```
+
+Output
+
+```python
+40
 ```
 
 ---
@@ -529,7 +552,7 @@ Output:
 
 ---
 
-- Opcionális paraméter
+### Opcionális paraméter
 
 ```python
 def fibonacci(n=10):
@@ -553,7 +576,7 @@ Output:
 
 ---
 
-- Névszerinti paraméterátadás
+### Névszerinti paraméterátadás
 
 ```python
 def print_rectangle(w=0, h=0, x=0, y=0):
@@ -580,7 +603,7 @@ Rectangle
 
 ---
 
-- Tetszőlegesen sok paraméter, list
+### Tetszőlegesen sok paraméter, list
 
 ```python
 def minimum(first, *args):
@@ -608,7 +631,7 @@ Note:
 
 ---
 
-- Tetszőlegesen sok paraméter, dictionary
+### Tetszőlegesen sok paraméter, dictionary
 
 ```python
 def bar(**kwargs):
@@ -646,6 +669,11 @@ print(dir(__builtins__))
 ---
 
 ### Osztályok
+
+- Hasonló mint C, C++-ban
+  - Többszörös öröklés
+  - Operator overloading
+- Minden public
 
 ---
 
@@ -703,7 +731,7 @@ print_apple()
 apple.py
 
 ```python
-def print_apple()
+def print_apple():
     print("Apple")
 ```
 
@@ -719,7 +747,7 @@ Note:
 
 ### Csomag
 
-- Hierarchikus szerkezet modulok tárolására.
+- Hierarchikus szerkezet modulok tárolására
 - Egy mappa ami tartalmaz egy __init__.py-t és modulokat vagy további csomagokat
 
 ```python
@@ -729,16 +757,11 @@ sound/                          Top-level package
               __init__.py
               wavread.py
               wavwrite.py
-              aiffread.py
-              aiffwrite.py
-              auread.py
-              auwrite.py
               ...
       effects/                  Subpackage for sound effects
               __init__.py
               echo.py
               surround.py
-              reverse.py
               ...
 ```
 
