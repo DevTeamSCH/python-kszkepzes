@@ -146,25 +146,6 @@ print("Hello World!")
 
 ---
 
-```bash
-pip install colorama
-```
-
-```python
-from colorama import init
-from colorama import Fore, Back, Style
-
-init()
-print(Fore.RED + "some red text")
-print(Back.GREEN + "and with a green background")
-print(Style.DIM + "and in dim text")
-print(Style.RESET_ALL)
-print("back to normal now")
-
-```
-
----
-
 ### Szintaxis
 
 ```python
@@ -252,7 +233,7 @@ list = ["a", "b", "c", 1, 2, 3]
 
 - Bármilyen típust tartalmazhat (általában egyforma)
 - Módosítható(mutable)
-- Az elemek indexelhetőek
+- Indexelhető
 
 ---
 
@@ -282,7 +263,7 @@ Output:
 ### Mit ír ki?
 
 ```python
-list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "utca"], 69.69, []]
+list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "u."], 69.69, []]
 print(list[-5:-3])
 
 ```
@@ -290,7 +271,7 @@ print(list[-5:-3])
 ---
 
 ```python
-list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "utca"], 69.69, []]
+list = ["SCH", "ujonc", "KSZK", "105", ["Kocka", "u."], 69.69, []]
 print(list[-5:-3])
 
 ```
@@ -311,6 +292,10 @@ tuple = ("a", "b", 3, 4)
 
 - Ugyanaz, mint egy lista
 - De nem módosítható(immutable)
+
+Note:
+
+- jelentése: véges lista
 
 ---
 
@@ -486,6 +471,30 @@ Output:
 
 ---
 
+### Elágazások
+
+---
+
+```python
+b = False
+x = 3
+if not b and x <= 6:
+    print("Hello")
+elif b or x > 5:
+   print("World!")
+else:
+   print("Hello World!")
+
+```
+
+Output:
+
+```python
+Hello
+```
+
+---
+
 ### Függvények
 
 ```python
@@ -494,7 +503,7 @@ def function(): # void function() {}
 ```
 
 - Hasonlít a C, C++ fügvényekre
-- Nem kell előre megadni a visszatérési értéket, változók tipusát
+- Nem kell megadni a visszatérési értéket, változók tipusát
 
 ---
 
@@ -620,20 +629,12 @@ Cica miaaau
 
 ---
 
-### Alap beépített fgv-ek
+### Beépített fgv-ek
 
 ```python
 print(dir(__builtins__))
 
 ```
-
-Output
-
-```python
-['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefu', ...]
-```
-
----
 
 - input() Allowing user input
 - len() Returns the length of an object
@@ -641,30 +642,6 @@ Output
 - slice() Returns a slice object
 - ...
 - https://www.w3schools.com/python/python_ref_functions.asp
-
----
-
-### Elágazások
-
----
-
-```python
-b = False
-x = 3
-if not b and x <= 6:
-    print("Hello")
-elif b or x > 5:
-   print("World!")
-else:
-   print("Hello World!")
-
-```
-
-Output:
-
-```python
-Hello
-```
 
 ---
 
@@ -709,6 +686,64 @@ Foo ρ Fej
 
 ---
 
+### Modul
+
+- Python forráskódot tartalmazó fájlok
+- Segítségükkel több fájlba tudjuk bontani a kódunkat
+
+fruite.py
+
+```python
+from apple import print_apple
+
+print_apple()
+
+```
+
+apple.py
+
+```python
+def print_apple()
+    print("Apple")
+```
+
+Note:
+
+- Előnyei
+  - Egyszerűbb, átlátható kód
+  - Könnyebben karbantartható, összefüggő programrészek egy helyen
+  - Egy modul egy feladat --> újrahasznosítható
+  - Namespce-ekre osztja a kódot, pl: két modulban lehet ugyan olyan nevű fgv
+
+---
+
+### Csomag
+
+- Hierarchikus szerkezet modulok tárolására.
+- Egy mappa ami tartalmaz egy __init__.py-t és modulokat vagy további csomagokat
+
+```python
+sound/                          Top-level package
+      __init__.py               Initialize the sound package
+      formats/                  Subpackage for file format conversions
+              __init__.py
+              wavread.py
+              wavwrite.py
+              aiffread.py
+              aiffwrite.py
+              auread.py
+              auwrite.py
+              ...
+      effects/                  Subpackage for sound effects
+              __init__.py
+              echo.py
+              surround.py
+              reverse.py
+              ...
+```
+
+---
+
 ### Pip
 
 - Csomagkezelő
@@ -731,6 +766,7 @@ pip install <package>
 ### Virtualenv
 
 - Saját környezet minden projekthez
+- Ide kerülnek a projekt csomagjai
 
 Note:
 
@@ -765,26 +801,25 @@ source venv/bin/activate
 ### Flake8
 
 - Linter
+- pep8(Style Guide)
 - Segít jobb kódot írni:
   - Syntax error
   - Typo
   - Rossz formázás
-- pep8(Style Guide)
 
 ```cmd
 pip install flake8
 ```
 
 ```cmd
-flake8 <filename>
+python3 -m flake8 <filename>
 ```
 
 Note:
 
 - Style Guide
   - átlátható
-  - egységes
-  - kevesebb merge conflict
+  - egységes --> kevesebb merge conflict
 
 ---
 
@@ -797,7 +832,7 @@ pip install black
 ```
 
 ```cmd
-black <filename>
+python3 -m black <filename>
 ```
 
 ---
@@ -806,7 +841,7 @@ black <filename>
 
 - Webfejlesztés:
   - Django
-  - Flusk
+  - Flask
   - Requests
 
 ---
@@ -853,9 +888,26 @@ Note:
 
 ---
 
-### Dekorátor
+```bash
+pip install colorama
+```
+
+```python
+from colorama import init
+from colorama import Fore, Back, Style
+
+init()
+print(Fore.RED + "some red text")
+print(Back.GREEN + "and with a green background")
+print(Style.DIM + "and in dim text")
+print(Style.RESET_ALL)
+print("back to normal now")
+
+```
 
 ---
+
+### Dekorátor
 
 ```python
 def my_decorator(func):
