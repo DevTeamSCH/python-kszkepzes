@@ -345,6 +345,7 @@ tuple = ("a", "b", 3, 4)
 Note:
 
 - jelentése: véges lista
+- zárojelben adjuk meg
 
 ---
 
@@ -374,6 +375,15 @@ Output:
 7
 ```
 
+Note:
+
+- Létrehozzuk
+- indexelunk mint a listánál
+- kiíratjuk
+- python okos, ha ugyanannyi a változo mint ami a tupleben van akkor átrakja
+- lehet konkatenálni
+- len kiiírja egy tuple, lista, string..  hosszát
+
 ---
 
 ### Dictionary
@@ -387,6 +397,10 @@ dict = {"Name": "Zara", "Age": 10, "Class": "First"}
 - Érték bármilyen típusú lehet
 - Kulcsal indexelhető
 - Mutable
+
+Note:
+
+- szótár
 
 ---
 
@@ -425,6 +439,8 @@ set = {1, 3, 5}
 - Nem indexelhető
 - Nem biztos, hogy sorban tárolja az elemeket
 - Mutable
+
+Note: halmaz
 
 ---
 
@@ -509,6 +525,13 @@ Output:
 5
 ```
 
+Note:
+
+- C eltérő
+- a for egy iterálható elemen megy végig
+- pl: list, string
+- range fgv, egy iterelható elemet ad vissza
+
 ---
 
 ### Mit ír ki?
@@ -545,6 +568,11 @@ Output
 
 ### Elágazások
 
+Note:
+
+-C if, else, while
+- if, elsif, else
+
 ---
 
 ```python
@@ -565,6 +593,11 @@ Output:
 Hello
 ```
 
+Note:
+
+- logikai jelek helyett kiírjuk
+- ! = not, && = and, || = or
+
 ---
 
 ### Függvények
@@ -576,6 +609,11 @@ def function(): # void function() {}
 
 - Hasonlít a C, C++ fügvényekre
 - Nem kell megadni a visszatérési értéket, változók tipusát
+
+Note:
+
+- pass = null operation, mikor végrehalytodik nem torténik semmi
+- nem lehet üres fgv megadni
 
 ---
 
@@ -590,6 +628,11 @@ def fibonacci(n):
 
 
 print(fibonacci(10))
+
+Note:
+
+ - rkurziv
+ - orfeltetel
 
 ```
 
@@ -675,6 +718,8 @@ Output:
 
 Note:
 
+- *válozó lista
+- ide pakolja be a python a maradék elemeket
 - miért van a first paraméter?
 - mert a min fgv 0 paraméterrel nem értelmes
 
@@ -688,7 +733,7 @@ def bar(**kwargs):
         print(key, value)
 
 
-bar(Kutya="vau", Cica="miaaau")
+print(bar(Kutya="vau", Cica="miaaau"))
 
 ```
 
@@ -698,6 +743,11 @@ Output:
 Kutya vau
 Cica miaaau
 ```
+
+Note:
+
+ -** válozonév egy dict, ide pakolja be a név szerint átadott elemek, amik nem szerepelnek a fgv változói közt
+ -változónév kulcs
 
 ---
 
@@ -711,7 +761,6 @@ print(dir(__builtins__))
 - input() Allowing user input
 - len() Returns the length of an object
 - abs() Returns the absolute value of a number
-- slice() Returns a slice object
 - ...
 - https://www.w3schools.com/python/python_ref_functions.asp
 
@@ -797,7 +846,7 @@ Note:
 ### Csomag
 
 - Hierarchikus szerkezet modulok tárolására
-- Egy mappa ami tartalmaz egy __init__.py-t és modulokat vagy további csomagokat
+- Egy mappa ami tartalmaz egy __init\__.py-t és modulokat vagy további csomagokat
 
 ```python
 sound/                          Top-level package
@@ -823,7 +872,7 @@ sound/                          Top-level package
   - Könnyen használható
 
 ```bash
-pip install <package>
+pip3 install <package>
 ```
 
 Note:
@@ -878,7 +927,7 @@ source venv/bin/activate
   - Rossz formázás
 
 ```cmd
-pip install flake8
+pip3 install flake8
 ```
 
 ```cmd
@@ -898,7 +947,7 @@ Note:
 - Atomatikusan formázza a kódot.
 
 ```cmd
-pip install black
+pip3 install black
 ```
 
 ```cmd
@@ -959,7 +1008,7 @@ Note:
 ---
 
 ```bash
-pip install colorama
+pip3 install colorama
 ```
 
 ```python
@@ -1001,6 +1050,10 @@ Before
 Hello
 After
 ```
+
+---
+
+--
 - Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
 - PythonNet
 
