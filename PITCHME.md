@@ -733,7 +733,7 @@ def bar(**kwargs):
         print(key, value)
 
 
-print(bar(Kutya="vau", Cica="miaaau"))
+bar(Kutya="vau", Cica="miaaau")
 
 ```
 
