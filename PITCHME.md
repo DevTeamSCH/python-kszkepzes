@@ -628,12 +628,6 @@ def fibonacci(n):
 
 
 print(fibonacci(10))
-
-Note:
-
- - rkurziv
- - orfeltetel
-
 ```
 
 Output:
@@ -641,6 +635,11 @@ Output:
 ```python
 55
 ```
+
+Note:
+
+- rkurziv
+- orfeltetel
 
 ---
 
@@ -777,14 +776,14 @@ print(dir(__builtins__))
 
 ```python
 class A:
-    _b = "Foo"
+    __b = "Foo"
 
     def __init__(self):
         self.a = 1
 
     def print(self, str):
         for x in range(self.a):
-            print(self._b, str)
+            print(self.__b, str)
 
 class B(A):
     def __init__(self, a):
@@ -846,7 +845,7 @@ Note:
 ### Csomag
 
 - Hierarchikus szerkezet modulok tárolására
-- Egy mappa ami tartalmaz egy __init\__.py-t és modulokat vagy további csomagokat
+- Egy mappa ami tartalmaz egy \_\_init\_\_.py-t és modulokat vagy további csomagokat
 
 ```python
 sound/                          Top-level package
