@@ -1006,17 +1006,20 @@ Note:
 ---
 
 ### Alap házi: kiscicák & git
+
 Ezt a repositoryt használjátok a feladat megoldásához:
 https://git.sch.bme.hu/pappbence96/kszkepzes-19-hazi
 Állítsátok be a gitet a gépeteken, klónozzátok le a projektet, hozzatok létre egy saját branchet, készítsetek egy mappát a nevetekkel, töltsétek meg cicákkal és a kedvenc viccetekkel, majd adjatok fel Pull Requestet.
- ---
 
-###Side quest: Falke8 & Black
+---
+
+### Side quest: Falke8 & Black
 
 Telepítsétek és állítsátok be a gépeteken a Flake8-at és a Blacket, hogy biztosan megfelelő minőségű Python kódot tudjatok produkálni.
 Írjatok egy rövidke, nem pep8-compliant python kódot, majd futtassátok le rajta a Flake8-at. Ezután a Black segítségével javítsátok a hibákat benne, hogy megfeleljen a pep8 elvárásainak..
 Az eredeti kódot, a Flake8 hibaüzeneteit és a Black által produkált végső kódot töltsétek fel a portálra egy tömörített mappában (original.py, errors.txt/errors.png, fixed.py).
- ---
+
+---
 
 ### Expert házi 1: Programozás & CI
 
@@ -1025,8 +1028,8 @@ https://docs.gitlab.com/ee/ci/quick_start/
 https://docs.travis-ci.com/user/tutorial/
 https://docs.python.org/3/library/unittest.html
 Opcionálisan, itt még állítsátok be a Flake8-at, hogy a pep8-nak nem megfelelő commitokat utasítsa el. (hint: https://forum.gitlab.com/t/running-pep8-on-merge-request/18816/2)
- 
- ---
+
+---
 
 ### Expert házi 2: Python3
 
