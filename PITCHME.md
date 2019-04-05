@@ -1035,8 +1035,7 @@ Az eredeti kódot, a Flake8 hibaüzeneteit és a Black által produkált végső
 ### Expert házi 1: Programozás & CI
 
 <div>
-@size[16px](
-Hozzatok létre egy git repot (GitLab vagy Github), készítsetek egy Python projektet és hozzá pár tesztet. Ez lehet akár egy egyszerű számoló osztály (add, subtract, multiply függvényekkel és hozzá tesztekkel). Töltsétek fel a projektet a repositoryba, és állítsatok be hozzá CI eszközt, pl Travis, vagy a GitLab saját megoldása. Ehhez segítséget ezeken a linkeken találhattok:
+@size[16px](Hozzatok létre egy git repot (GitLab vagy Github), készítsetek egy Python projektet és hozzá pár tesztet. Ez lehet akár egy egyszerű számoló osztály (add, subtract, multiply függvényekkel és hozzá tesztekkel). Töltsétek fel a projektet a repositoryba, és állítsatok be hozzá CI eszközt, pl Travis, vagy a GitLab saját megoldása. Ehhez segítséget ezeken a linkeken találhattok:)
 
 https://docs.gitlab.com/ee/ci/quick_start/
 
@@ -1047,7 +1046,6 @@ https://docs.python.org/3/library/unittest.html
 Opcionálisan, itt még állítsátok be a Flake8-at, hogy a pep8-nak nem megfelelő commitokat utasítsa el.
 
 (hint: https://forum.gitlab.com/t/running-pep8-on-merge-request/18816/2)
-)
 </div>
 
 ---
