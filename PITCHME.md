@@ -1113,11 +1113,3 @@ Before
 Hello
 After
 ```
-
----
-
-- Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
-- PythonNet
-
- Jupiter, Saturn, Uranus and Neptune
-- https://en.wikipedia.org/wiki/N-body_simulation
