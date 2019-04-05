@@ -1007,35 +1007,36 @@ Note:
 
 ### Alap házi: kiscicák & git
 
-<div>
-@size[16px](Ezt a repositoryt használjátok a feladat megoldásához:
+<div style="font-size: 11px">
+Ezt a repositoryt használjátok a feladat megoldásához:
 
 https://git.sch.bme.hu/pappbence96/kszkepzes-19-hazi
 
 Állítsátok be a gitet a gépeteken, klónozzátok le a projektet, hozzatok létre egy saját branchet, készítsetek egy mappát a nevetekkel, töltsétek meg cicákkal és a kedvenc viccetekkel, majd adjatok fel Pull Requestet.
-)
+
 </div>
 
 ---
 
 ### Side quest: Falke8 & Black
 
-<div>
-@size[16px](
+<div style="font-size: 11px">
+
 Telepítsétek és állítsátok be a gépeteken a Flake8-at és a Blacket, hogy biztosan megfelelő minőségű Python kódot tudjatok produkálni.
 
 Írjatok egy rövidke, nem pep8-compliant python kódot, majd futtassátok le rajta a Flake8-at. Ezután a Black segítségével javítsátok a hibákat benne, hogy megfeleljen a pep8 elvárásainak..
 
 Az eredeti kódot, a Flake8 hibaüzeneteit és a Black által produkált végső kódot töltsétek fel a portálra egy tömörített mappában (original.py, errors.txt/errors.png, fixed.py).
-)
+
 </div>
 
 ---
 
 ### Expert házi 1: Programozás & CI
 
-<div>
-@size[16px](Hozzatok létre egy git repot (GitLab vagy Github), készítsetek egy Python projektet és hozzá pár tesztet. Ez lehet akár egy egyszerű számoló osztály (add, subtract, multiply függvényekkel és hozzá tesztekkel). Töltsétek fel a projektet a repositoryba, és állítsatok be hozzá CI eszközt, pl Travis, vagy a GitLab saját megoldása. Ehhez segítséget ezeken a linkeken találhattok:)
+<div style="font-size: 11px">
+
+Hozzatok létre egy git repot (GitLab vagy Github), készítsetek egy Python projektet és hozzá pár tesztet. Ez lehet akár egy egyszerű számoló osztály (add, subtract, multiply függvényekkel és hozzá tesztekkel). Töltsétek fel a projektet a repositoryba, és állítsatok be hozzá CI eszközt, pl Travis, vagy a GitLab saját megoldása. Ehhez segítséget ezeken a linkeken találhattok:
 
 https://docs.gitlab.com/ee/ci/quick_start/
 
@@ -1046,14 +1047,15 @@ https://docs.python.org/3/library/unittest.html
 Opcionálisan, itt még állítsátok be a Flake8-at, hogy a pep8-nak nem megfelelő commitokat utasítsa el.
 
 (hint: https://forum.gitlab.com/t/running-pep8-on-merge-request/18816/2)
-</div>
+
+</div style="font-size: 11px">
 
 ---
 
 ### Expert házi 2: Python3
 
-<div>
-@size[16px](
+<div style="font-size: 11px">
+
 Válaszatok ki a Czirkos Zoli által kitalált szorgalmi feladatok (4 - 20 feladat) közül egyet vagy többet, lehetőleg olyat, amit prog1-ből nem készítettetek el.
 
 Ezekhez írjátok meg a kódot Python3-ban és a megoldásokat töltsétek fel gitre, küldjétek el a repok linkjeit.
@@ -1061,7 +1063,7 @@ Ezekhez írjátok meg a kódot Python3-ban és a megoldásokat töltsétek fel g
 A feladatok itt találhatóak:
 
 https://web.archive.org/web/20181208084846/https://infopy.eet.bme.hu/szorgalmik/
-)
+
 </div>
 
 ---
