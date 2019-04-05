@@ -1007,7 +1007,7 @@ Note:
 
 ### Alap házi: kiscicák & git
 
-<div style="font-size: 11px">
+<div style="font-size: 16px">
 Ezt a repositoryt használjátok a feladat megoldásához:
 
 https://git.sch.bme.hu/pappbence96/kszkepzes-19-hazi
@@ -1020,7 +1020,7 @@ https://git.sch.bme.hu/pappbence96/kszkepzes-19-hazi
 
 ### Side quest: Falke8 & Black
 
-<div style="font-size: 11px">
+<div style="font-size: 16px">
 
 Telepítsétek és állítsátok be a gépeteken a Flake8-at és a Blacket, hogy biztosan megfelelő minőségű Python kódot tudjatok produkálni.
 
@@ -1034,7 +1034,7 @@ Az eredeti kódot, a Flake8 hibaüzeneteit és a Black által produkált végső
 
 ### Expert házi 1: Programozás & CI
 
-<div style="font-size: 11px">
+<div style="font-size: 16px">
 
 Hozzatok létre egy git repot (GitLab vagy Github), készítsetek egy Python projektet és hozzá pár tesztet. Ez lehet akár egy egyszerű számoló osztály (add, subtract, multiply függvényekkel és hozzá tesztekkel). Töltsétek fel a projektet a repositoryba, és állítsatok be hozzá CI eszközt, pl Travis, vagy a GitLab saját megoldása. Ehhez segítséget ezeken a linkeken találhattok:
 
@@ -1048,13 +1048,13 @@ Opcionálisan, itt még állítsátok be a Flake8-at, hogy a pep8-nak nem megfel
 
 (hint: https://forum.gitlab.com/t/running-pep8-on-merge-request/18816/2)
 
-</div style="font-size: 11px">
+</div>
 
 ---
 
 ### Expert házi 2: Python3
 
-<div style="font-size: 11px">
+<div style="font-size: 16px">
 
 Válaszatok ki a Czirkos Zoli által kitalált szorgalmi feladatok (4 - 20 feladat) közül egyet vagy többet, lehetőleg olyat, amit prog1-ből nem készítettetek el.
 
