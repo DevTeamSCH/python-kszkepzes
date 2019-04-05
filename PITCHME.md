@@ -9,7 +9,6 @@ Note:
 
 - Ki ismeri a Pythont?
 - Ki tudja mit csinál a kód?
-- Nézzük meg mit is csinál.
 ---
 
 ### The Zen of Python, by Tim Peters
@@ -45,8 +44,6 @@ Note:
 
 Note:
 
-- Kiírja a Zen of Pythont
-- Kiemeltem párat nektek, amit fontosnak tartok
 - De mi is ez?
 - Python tervezési filozófiája, igy irjuk a python kódunkat
 
@@ -62,8 +59,7 @@ Note:
 
 - 89 karácsonya előtt
 - 1 hét szünete -> Ír egy programnyelvet, amit egyszerű használni
-- Kedven sorozatárol a Monty Python
-- 1991 első verzió
+- Kedvenc sorozatárol a Monty Pythonról nevezi el
 - Magas szintű jellemzői:
   - könnyen olvasható, tanulható, gyors fejlesztés
   - lassú
@@ -80,9 +76,7 @@ Note:
 Note:
 
 - Python interpretált nyelv
-- Az interpreter dolgozz fel és futtatja a kódot
-- Mivel nem a rendszer futatja a kódot, hanem az értelmező
-- nincs platformhoz kötve, értelmezőnek kell lennie
+- Mivel nem a rendszer futatja a kódot, hanem az értelmező, nincs platformhoz kötve
 - Sok féle megvalósítás -> alap: Cpython
 - PyPy (C, CLI, JVM), 5x gyorsabb
 - Létezik java és dotnet alapú is
@@ -98,7 +92,6 @@ Note:
 - Interpretált:
   - Bárhol lefut, nem kell lefordítani
 - Mindent is lehet benne csinálni
-- Vicc : Bármit akarunk a második legjobb választás 
 
 ---
 
@@ -155,8 +148,6 @@ N-body
 
 Note:
 
-- Kezdjük is el írni az első programunkat
-- Mint minden nyelven a Hello Worldot
 ---
 
 ```python
@@ -204,9 +195,6 @@ Note:
 - list, tuple, dictionary, ...
 
 Note:
-
-- Mint láthatjátok vannak számok, boolok, stringek
-- egyébb adattípusok: list, tuple
 
 ---
 
@@ -256,7 +244,6 @@ stringstringabc
 
 Note:
 
--Konkatenálni
 
 ---
 
@@ -378,7 +365,7 @@ Output:
 Note:
 
 - Létrehozzuk
-- indexelunk mint a listánál
+- indexelhetünk mint a listánál
 - kiíratjuk
 - python okos, ha ugyanannyi a változo mint ami a tupleben van akkor átrakja
 - lehet konkatenálni
@@ -596,7 +583,7 @@ Hello
 Note:
 
 - logikai jelek helyett kiírjuk
-- ! = not, && = and, || = or
+- not = !, and = &&, or = ||
 
 ---
 
@@ -717,7 +704,7 @@ Output:
 
 Note:
 
-- *válozó lista
+- *<válozó> lista
 - ide pakolja be a python a maradék elemeket
 - miért van a first paraméter?
 - mert a min fgv 0 paraméterrel nem értelmes
@@ -745,7 +732,7 @@ Cica miaaau
 
 Note:
 
- -** válozonév egy dict, ide pakolja be a név szerint átadott elemek, amik nem szerepelnek a fgv változói közt
+ -** <válozonév> egy dict, ide pakolja be a név szerint átadott elemek, amik nem szerepelnek a fgv változói közt
  -változónév kulcs
 
 ---
@@ -938,8 +925,7 @@ Note:
 - Style Guide
   - átlátható
   - egységes --> kevesebb merge conflict
--PEP (Python Enháncment Propózolsz)
-
+-PEP (Python Enhancement Proposal)
 
 ---
 
@@ -1065,7 +1051,6 @@ After
 
 ---
 
---
 - Jython bármilyen Java class használhatunk vele, mintha Python modul lenne
 - PythonNet
 
